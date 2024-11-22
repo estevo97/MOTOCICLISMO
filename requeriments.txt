@@ -1,0 +1,13 @@
+﻿streamlit
+streamlit-option-menu
+numpy
+pandas
+seaborn
+matplotlib
+plotly-express
+plotly
+folium
+streamlit-folium
+joblib
+pycaret
+xgboost
