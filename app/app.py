@@ -812,6 +812,15 @@ elif page == "Test de Hipótesis":
                 <li> Ejemplo B: Alvaro Bautista 
             </ul>
             </p>
+        </div>
+        """,
+        unsafe_allow_html=True)  
+
+        st.write("")
+
+    st.markdown(
+        """
+        <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h3 style="text-indent: 1em;">Prueba 2a: DANI PEDROSA</h3>
         </div>
         """,
@@ -826,12 +835,19 @@ elif page == "Test de Hipótesis":
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <p style="text-indent: 1em;"> p=0.003 </p>
         <p> <b>Se descarta</b> la hipótesis nula. Dani Pedrosa rinde mejor en los circuitos españoles que en los de fuera. </p>
-        <h3 style="text-indent: 1em;">Prueba 2b: ALVARO BAUTISTA</h3>
         </div>
         """,
         unsafe_allow_html=True)
     
     st.write("")
+
+        st.markdown(
+        """
+        <div style="background-color: white; padding: 10px; border-radius: 5px;">
+            <h3 style="text-indent: 1em;">Prueba 2a: ALVARO BAUTISTA</h3>
+        </div>
+        """,
+        unsafe_allow_html=True
 
     st.write("")
 
