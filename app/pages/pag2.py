@@ -254,3 +254,11 @@ with col2:
     ) 
     
 st.write("")
+
+st.write("")
+    
+st.image('img/los_4_fantasticos.jpg', use_column_width=True)
+
+st.write("")
+    
+st.image('img/los_4_fantasticos.jpg', use_column_width=True)
