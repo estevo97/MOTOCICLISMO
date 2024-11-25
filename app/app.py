@@ -53,7 +53,7 @@ warnings.simplefilter(action='ignore', category=(SettingWithCopyWarning))
 
 
 load_dotenv()
-url_victorias = os.getenv("POWERBI_URL_victorias")
+url_victorias = url_victorias = st.secrets.get("POWERBI_URL_victorias")
 
 # ---------------------SITE CONFIG----------------------#
 st.set_page_config(
