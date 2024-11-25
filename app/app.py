@@ -816,7 +816,7 @@ elif page == "Test de Hipótesis":
         """,
         unsafe_allow_html=True)  
 
-        st.write("")
+    st.write("")
 
     st.markdown(
         """
