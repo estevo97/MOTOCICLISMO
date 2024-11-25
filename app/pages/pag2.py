@@ -52,10 +52,11 @@ st.markdown(
         """,
         unsafe_allow_html=True)
     
-    st.write("")
+st.write("")
     
-    col1, col2 = st.columns([1, 2]) 
-    with col1:
+col1, col2 = st.columns([1, 2]) 
+
+with col1:
         st.write(tabla3)
         st.markdown(
         """
@@ -64,8 +65,9 @@ st.markdown(
         </div>
         """,
         unsafe_allow_html=True
-    ) 
-    with col2:
+    )
+    
+with col2:
         st.write(tabla4)
         st.markdown(
         """
@@ -76,10 +78,10 @@ st.markdown(
         unsafe_allow_html=True
     ) 
     
-    st.write("")
-    st.write("")
+st.write("")
+st.write("")
         
-    st.markdown(
+st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             Creación de gráficos en de densidad con el suavizado de Kernel para la velocidad media por carrera desde el año 2000. 
@@ -89,21 +91,21 @@ st.markdown(
         """,
         unsafe_allow_html=True)    
     
-    st.write("")
+st.write("")
 
-    st.image('img/velocidad.jpg', use_column_width=True)
+st.image('img/velocidad.jpg', use_column_width=True)
     
-    st.write("")
+st.write("")
 
-    st.image('img/velocidad_3_jorobas.jpg', use_column_width=True)
+st.image('img/velocidad_3_jorobas.jpg', use_column_width=True)
     
-    st.write("")
+st.write("")
 
-    st.image('img/cilindradas_antiguas.jpg', use_column_width=True)
+st.image('img/cilindradas_antiguas.jpg', use_column_width=True)
     
-    st.write("")
+st.write("")
 
-    st.markdown(
+st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h2 style="text-indent: 1em;">Máximos ganadores</h2>
@@ -114,13 +116,13 @@ st.markdown(
         """,
         unsafe_allow_html=True)
     
-    st.write("")
+st.write("")
 
-    components.iframe(url_victorias, height=450, width=700)
+components.iframe(url_victorias, height=450, width=700)
 
-    st.write("")
+st.write("")
 
-    st.markdown(
+st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <p style="text-indent: 1em;"> Si escogemos los datos totales, <b>Valentino Rossi</b> aparece en primer lugar con 87 victorias (si contásemos desde que debutó serían 115),
@@ -135,11 +137,11 @@ st.markdown(
         """,
         unsafe_allow_html=True)
     
-    st.write("")
+st.write("")
     
-    st.image('img/los_4_fantasticos.jpg', use_column_width=True)
+st.image('img/los_4_fantasticos.jpg', use_column_width=True)
 
-    st.markdown(
+st.markdown(
         """
         <div style="background-color: white; padding: 0px; border-radius: 5px;">
             <p style="text-indent: 1em; font-size: 3.6mm;">     
@@ -149,9 +151,9 @@ st.markdown(
         """,
         unsafe_allow_html=True)
     
-    st.write("")
+st.write("")
 
-    st.markdown(
+st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h2 style="text-indent: 1em;">Victorias por nacionalidad</h2>
@@ -159,9 +161,9 @@ st.markdown(
         """,
     unsafe_allow_html=True)
     
-    st.write("")
+st.write("")
 
-    st.markdown(
+st.markdown(
         """
         <div style="background-color: white; padding:-2px; border-radius: 5px; text-align: center;">
             <h5 style="text-indent: 1em;">TABLAS 5, 6, 7 y 8. RECUENTO DE VICTORIAS</h5>
@@ -169,10 +171,10 @@ st.markdown(
         """,
     unsafe_allow_html=True)
 
-    st.write("")   
+st.write("")   
     
-    col1, col2 = st.columns([1, 2]) 
-    with col1:
+col1, col2 = st.columns([1, 2]) 
+with col1:
         st.write(tabla5)
         st.markdown(
         """
@@ -182,7 +184,7 @@ st.markdown(
         """,
         unsafe_allow_html=True
     ) 
-    with col2:
+with col2:
         st.write(tabla6)
         st.markdown(
         """
@@ -193,12 +195,13 @@ st.markdown(
         unsafe_allow_html=True
     ) 
     
-    st.write("")
+st.write("")
 
-    st.write("")
+st.write("")
     
-    col1, col2 = st.columns([1, 2]) 
-    with col1:
+col1, col2 = st.columns([1, 2]) 
+
+with col1:
         st.write(tabla7)
         st.markdown(
         """
@@ -208,7 +211,7 @@ st.markdown(
         """,
         unsafe_allow_html=True
     ) 
-    with col2:
+with col2:
         st.write(tabla8)
         st.markdown(
         """
@@ -219,4 +222,4 @@ st.markdown(
         unsafe_allow_html=True
     ) 
     
-    st.write("")
+st.write("")
