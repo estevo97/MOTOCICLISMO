@@ -699,7 +699,7 @@ elif page == "Test de Hipótesis":
     unsafe_allow_html=True)
 
     st.markdown(
-    """
+    r"""
     <div style="
         background-color: #f9f9f9; 
         border: 2px solid #dcdcdc; 
