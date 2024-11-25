@@ -48,7 +48,7 @@ st.markdown(
             y EEUU), mientras que las cinco victorias no le sirvieron a Rossi para ser campeón.</p>
             <p style="text-indent: 1em;"> A modo de curiosidad: puede que les llame la atención las puntuaciones del gran premio de Catalunya, con una gran cantidad de ceros. Esto fue debido a una
             caída grupal que tuvo lugar en la salida tras un toque entre el español Sete Gibernau y Loris Capirossi, que terminó haciendo un efecto dominó involucrando a otros pilotos
-            como Marco Melandri y Dani Pedrosa. El vídeo de la salida de ese caótico gran premio se puede visualizar en este link: https://www.youtube.com/watch?v=AOwNOT-BlG8
+            como Marco Melandri y Dani Pedrosa. El vídeo de la salida de ese caótico gran premio se puede visualizar en este link: <a https://www.youtube.com/watch?v=AOwNOT-BlG8> Ver vídeo en YouTube </a>
         </div>
         """,
         unsafe_allow_html=True)
