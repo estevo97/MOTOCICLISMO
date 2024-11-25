@@ -1,16 +1,13 @@
 
 # ANÁLISIS MOTOgpERO
  
-st.write("")
-    st.markdown(
-        """
-        <div style="background-color: #EECCAA; padding: 0px 0px 0px 10px; border-radius: 5px;">
-            <p>Creación y diseño: <b>ESTEVO ARIAS GARCÍA</b></p>
-        </div>
-        """,
-        unsafe_allow_html=True)
+<div style="background-color: #EECCAA; padding: 0px 0px 0px 10px; border-radius: 5px;">
+      <p>Creación y diseño: <b>ESTEVO ARIAS GARCÍA</b></p>
+</div>
+    """,
+  unsafe_allow_html=True)
     
-    st.write("")
+
     
     st.markdown(
     """
