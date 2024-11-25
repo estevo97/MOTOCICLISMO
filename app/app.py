@@ -728,7 +728,7 @@ elif page == "Test de Hipótesis":
         unsafe_allow_html=True)
 
 # Usamos st.latex para renderizar la fórmula
-    st.latex(r"y = \beta_0 + \beta_1 x + \epsilon + 2")
+    st.latex(r"y = \beta_0 + \beta_1 x + \epsilon + \beta_4")
 
 # Cerrar el contenedor
     st.markdown("</div>", unsafe_allow_html=True)
