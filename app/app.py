@@ -225,8 +225,17 @@ if page == "Home":
     st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h1>En este proyecto...</h1>
-            Aquí se muestran detalles sobre la limpieza de datos.
+            <h1> ¡Bienvenido a nuestra aplicación!</h1>
+            <h2> Podrá usted consultar</h2>
+            <h3 style="text-indent: 1em;">
+            <ul style="text-indent: 1em;">
+                <li> LIMPIEZA: El pre-procesamiento de los datasets que utilizamos
+                <li> EDA: Gráficas comentadas de nuestros análisis exploratorios
+                <li> TEMPORADAS: Analizamos algunas temporadas y sacamos conclusiones inéditas
+                <li> CONTRASTE DE HIPÓTESIS: Resolvemos algunas dudas que muchos aficionados al motociclismo tienen/tenemos
+                <li> MODELO DE REGRESIÓN: Con nuestro nuevo modelo, podrá usted introducir los datos de su circuito (real o ficticio) y éste les dirá el tiempo por vuelta estimado!
+            </ul>
+            </h3>
         </div>
         """,
         unsafe_allow_html=True
