@@ -67,7 +67,7 @@ st.write("")
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Temporada 2007</h3>
+            <h3 style="text-indent: 1em;">Temporada 2008</h3>
             <p style="text-indent: 1em;"> En el año 2008 debutó el mallorquín <b>Jorge Lorenzo</b> como compañero de equipo de Valentino Rossi.
         Este año consistió en una lucha cuerpo a cuerpo entre Stoner y Rossi, que tuvo su climax durante el Gran Premio de Laguna Seca, donde se recuerda
         el famoso adelantamiento de Rossi a Stoner en la curva de la sacacorchos. No obstante, durante la primera mitad del campeonato el dominio
@@ -82,8 +82,28 @@ st.image('img/2008.jpg', use_column_width=True)
 
 st.write("")
 
+st.markdown(
+        """
+        <div style="background-color: white; padding: 10px; border-radius: 5px;">
+            <h3 style="text-indent: 1em;">Temporada 2009</h3>
+            <p style="text-indent: 1em;"> En el año 2009 
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True)
+
 st.image('img/2009.jpg', use_column_width=True)
 
 st.write("")
+
+st.markdown(
+        """
+        <div style="background-color: white; padding: 10px; border-radius: 5px;">
+            <h3 style="text-indent: 1em;">Temporada 2010</h3>
+            <p style="text-indent: 1em;"> En el año 2010    
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True)
 
 st.image('img/2010.jpg', use_column_width=True)
