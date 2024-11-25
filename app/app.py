@@ -717,15 +717,15 @@ elif page == "Test de Hipótesis":
 
     st.markdown(
     """
-    <div style="
-        background-color: white; 
-        border: 2px solid #dcdcdc; 
-        border-radius: 8px; 
-        padding: 20px; 
-        margin: 20px 0; 
-        text-align: center;">
-    """, 
-    unsafe_allow_html=True)
+        <div style="
+            background-color: white; 
+            border: 2px solid #dcdcdc; 
+            border-radius: 8px; 
+            padding: 20px; 
+            margin: 20px 0; 
+            text-align: center;">
+        """, 
+        unsafe_allow_html=True)
 
 # Usamos st.latex para renderizar la fórmula
     st.latex(r"y = \beta_0 + \beta_1 x + \epsilon")
