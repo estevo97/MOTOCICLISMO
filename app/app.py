@@ -694,6 +694,8 @@ elif page == "Test de Hipótesis":
                 </tr>
             </tbody>
         </table>
+        <p style="text-indent: 1em;"> La fórmula del modelo de regresión lineal es:.<p/>
+        st.latex(r"y = \beta_0 + \beta_1 x + \epsilon")
     </div>
     """,
     unsafe_allow_html=True)
