@@ -61,7 +61,7 @@ st.markdown(
             gap: 10px; 
             font-family: 'Sofia', sans-serif; 
             color: #335577;">
-        <h1 style="font-family: 'Tangerine', sans-serif; color: #002200; margin-right: -17px;">Análisis exploratorio de datos</h1> 
+        <h1 style="font-family: 'Tangerine', sans-serif; color: #002200; margin-right: -17px;">Análisis exploratorio detallado</h1> 
     </div>
     """,
     unsafe_allow_html=True)
@@ -129,6 +129,10 @@ st.image('img/velocidad_3_jorobas.jpg', use_column_width=True)
 st.write("")
 
 st.image('img/cilindradas_antiguas.jpg', use_column_width=True)
+    
+st.write("")
+
+st.image('img/velocidades_antiguas.jpg', use_column_width=True)
     
 st.write("")
 
