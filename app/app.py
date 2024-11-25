@@ -720,7 +720,7 @@ elif page == "Test de Hipótesis":
         <div style="text-align: center; border-radius: 15px; box-shadow: 0 15 15px rgba(0, 0, 0, 0.2); padding: 10px;">
             <img src="data:image/png;base64,{}" width="250">
         </div>
-        """.format(base64.b64encode(open('../img/formula.png', "rb").read()).decode()),
+        """.format(base64.b64encode(open('img/formula.png', "rb").read()).decode()),
         unsafe_allow_html=True
     )
 
@@ -746,7 +746,7 @@ elif page == "Test de Hipótesis":
         <div style="text-align: center; border-radius: 15px; box-shadow: 0 15 15px rgba(0, 0, 0, 0.2); padding: 10px;">
             <img src="data:image/png;base64,{}" width="250">
         </div>
-        """.format(base64.b64encode(open('../img/formula_vm.png', "rb").read()).decode()),
+        """.format(base64.b64encode(open('img/formula_vm.png', "rb").read()).decode()),
         unsafe_allow_html=True
     )
 
