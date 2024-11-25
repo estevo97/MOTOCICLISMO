@@ -236,7 +236,6 @@ if page == "Home":
             <li><b><span style="color: #7D3C98;">Sidebar:</span></b> <i>Información más pormenorizada de todos estos procesos.</i></li>
             <li><b><span style="color: #1F618D;">Y mucho más:</span></b> <i>¡Esto se actualiza cada día!</i></li>
         </ul>
-
         <h2 style="margin-top: 30px; color: #117A65;">Próximas novedades:</h2>
         <p style="text-indent: 20px; line-height: 1.8;">En pocas semanas, estará disponible la nueva aplicación con la red neuronal <b>InceptionV3</b>, con la que podrá 
         <i>dibujar con el cursor un TRAZADO de un circuito real</i>, y ésta le dirá el nombre del circuito con sus datos y estadísticas.</p>
