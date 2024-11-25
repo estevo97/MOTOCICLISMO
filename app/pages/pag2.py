@@ -45,7 +45,7 @@ tabla8 = pd.read_csv('tablas/paises_antes_500.csv')
 tabla8 = tabla8.drop(tabla8.columns[0], axis=1)
 
 load_dotenv()
-url_victorias = url_victorias = st.secrets.get("POWERBI_URL_victorias")
+url_victorias = st.secrets.get("POWERBI_URL_victorias")
 
 
 st.markdown(
