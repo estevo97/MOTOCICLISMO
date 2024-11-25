@@ -235,6 +235,9 @@ if page == "Home":
                 <li> CONTRASTE DE HIPÓTESIS: Resolvemos algunas dudas que muchos aficionados al motociclismo tienen/tenemos
                 <li> MODELO DE REGRESIÓN: Con nuestro nuevo modelo, podrá usted introducir los datos de su circuito (real o ficticio) y éste les dirá el tiempo por vuelta estimado!
             </ul>
+            <h2> Próximas novedades</h2>
+            <p> En pocas semanas, estará disponible la nueva aplicación con la red neuronal InceptionV3, con la que podrá dibujar con el cursor un TRAZADO de un circuito
+            real y ésta le dirá el nombre del circuito con sus datos y estadísticas.
             </h3>
         </div>
         """,
