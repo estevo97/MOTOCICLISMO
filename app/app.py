@@ -230,9 +230,13 @@ if page == "Home":
             <h3 style="text-indent: 1em;">
             <ul style="text-indent: 1em;">
                 <li> LIMPIEZA: El pre-procesamiento de los datasets que utilizamos
+                
                 <li> EDA: Gráficas comentadas de nuestros análisis exploratorios
+                
                 <li> TEMPORADAS: Analizamos algunas temporadas y sacamos conclusiones inéditas
+                
                 <li> CONTRASTE DE HIPÓTESIS: Resolvemos algunas dudas que muchos aficionados al motociclismo tienen/tenemos
+                
                 <li> MODELO DE REGRESIÓN: Con nuestro nuevo modelo, podrá usted introducir los datos de su circuito (real o ficticio) y éste les dirá el tiempo por vuelta estimado!
             </ul>
             <h2> Próximas novedades</h2>
