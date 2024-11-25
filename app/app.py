@@ -844,7 +844,7 @@ elif page == "Test de Hipótesis":
     st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Prueba 2a: ALVARO BAUTISTA</h3>
+            <h3 style="text-indent: 1em;">Prueba 2b: ALVARO BAUTISTA</h3>
         </div>
         """,
         unsafe_allow_html=True)
