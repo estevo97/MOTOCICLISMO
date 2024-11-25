@@ -222,7 +222,7 @@ if page == "Home":
     
     st.write("")
     
-st.markdown(
+    st.markdown(
     """
     <div style="background-color: white; padding: 20px; border-radius: 10px; font-family: Arial, sans-serif;">
         <h1 style="text-align: center; color: #2E86C1;">¡Bienvenido a nuestra aplicación!</h1>
