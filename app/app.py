@@ -716,7 +716,7 @@ elif page == "Test de Hipótesis":
 )
 
     st.markdown(
-    r"""
+    """
     <div style="
         background-color: white; 
         border: 2px solid #dcdcdc; 
@@ -724,13 +724,16 @@ elif page == "Test de Hipótesis":
         padding: 20px; 
         margin: 20px 0; 
         text-align: center;">
-        $$ y = \beta_0 + \beta_1 x + \epsilon $$
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+    """, 
+    unsafe_allow_html=True)
 
+# Usamos st.latex para renderizar la fórmula
+    st.latex(r"y = \beta_0 + \beta_1 x + \epsilon")
+
+# Cerrar el contenedor
     st.markdown("</div>", unsafe_allow_html=True)
+
+    st.write("")
 
     st.image('img/reglin.jpg', use_column_width=True)
 
