@@ -123,7 +123,7 @@ page = option_menu(None, ["Home", "Limpieza", "EDA", "Temporadas", "Test de Hip�
 # read data
 @st.cache_data()
 def load_data():
-    df = pd.read_csv(r'../data/FILTERED_ROWS.csv')
+    df = pd.read_csv('data/FILTERED_ROWS.csv')
     return df
 
 # load data
@@ -148,7 +148,7 @@ def add_bg_from_local(image_file):
     unsafe_allow_html=True
 )
 
-add_bg_from_local(r'../img/icon_moto2.png')
+add_bg_from_local('img/icon_moto2.png')
 
 # ---------------------BODY----------------------#
 
@@ -199,8 +199,8 @@ st.markdown(
         </div>
     </div>
     """.format(
-        base64.b64encode(open(r'../img/icon_moto.png', "rb").read()).decode(),
-        base64.b64encode(open(r'../img/icon_moto.png', "rb").read()).decode()
+        base64.b64encode(open('img/icon_moto.png', "rb").read()).decode(),
+        base64.b64encode(open('img/icon_moto.png', "rb").read()).decode()
     ),
     unsafe_allow_html=True
 )
@@ -295,7 +295,7 @@ elif page == "Limpieza":
     )  
     st.write("")
 
-    st.image(r'../img/boxplot_speed.jpg', use_column_width=True)
+    st.image('img/boxplot_speed.jpg', use_column_width=True)
     
     st.write("")
     st.markdown(
@@ -399,15 +399,15 @@ elif page == "EDA":
     
     st.write("")
 
-    st.image(r'../img/velocidad.jpg', use_column_width=True)
+    st.image('img/velocidad.jpg', use_column_width=True)
     
     st.write("")
 
-    st.image(r'../img/velocidad_3_jorobas.jpg', use_column_width=True)
+    st.image('img/velocidad_3_jorobas.jpg', use_column_width=True)
     
     st.write("")
 
-    st.image(r'../img/cilindradas_antiguas.jpg', use_column_width=True)
+    st.image('img/cilindradas_antiguas.jpg', use_column_width=True)
     
     st.write("")
 
@@ -445,7 +445,7 @@ elif page == "EDA":
     
     st.write("")
     
-    st.image(r'../img/los_4_fantasticos.jpg', use_column_width=True)
+    st.image('img/los_4_fantasticos.jpg', use_column_width=True)
 
     st.markdown(
         """
@@ -559,7 +559,7 @@ elif page == "Temporadas":
         """,
         unsafe_allow_html=True)
 
-    st.image(r'../img/2006.jpg', use_column_width=True)
+    st.image('img/2006.jpg', use_column_width=True)
 
     st.write("")
 
@@ -574,7 +574,7 @@ elif page == "Temporadas":
         """,
         unsafe_allow_html=True)
 
-    st.image(r'../img/2007.jpg', use_column_width=True)
+    st.image('img/2007.jpg', use_column_width=True)
 
     st.write("")
 
@@ -592,15 +592,15 @@ elif page == "Temporadas":
         """,
         unsafe_allow_html=True)
 
-    st.image(r'../img/2008.jpg', use_column_width=True)
+    st.image('img/2008.jpg', use_column_width=True)
 
     st.write("")
 
-    st.image(r'../img/2009.jpg', use_column_width=True)
+    st.image('img/2009.jpg', use_column_width=True)
 
     st.write("")
 
-    st.image(r'../img/2010.jpg', use_column_width=True)
+    st.image('img/2010.jpg', use_column_width=True)
 
 
 
@@ -663,15 +663,15 @@ elif page == "Test de Hipótesis":
     """,
     unsafe_allow_html=True)
 
-    st.image(r'../img/reglin.jpg', use_column_width=True)
+    st.image('img/reglin.jpg', use_column_width=True)
 
     st.write("")
 
-    st.image(r'../img/circ_esp.jpg', use_column_width=True)
+    st.image('img/circ_esp.jpg', use_column_width=True)
 
     st.write("")
 
-    st.image(r'../img/circ_esp_vio.jpg', use_column_width=True)
+    st.image('img/circ_esp_vio.jpg', use_column_width=True)
 
     st.write("")
 
@@ -701,7 +701,7 @@ elif page == "Test de Hipótesis":
     
     st.write("")
 
-    st.image(r'../img/circ_pedr_vio.jpg', use_column_width=True)
+    st.image('img/circ_pedr_vio.jpg', use_column_width=True)
 
     st.markdown(
         """
@@ -716,7 +716,7 @@ elif page == "Test de Hipótesis":
 
     st.write("")
 
-    st.image(r'../img/circ_bau_vio.jpg', use_column_width=True) 
+    st.image('img/circ_bau_vio.jpg', use_column_width=True) 
 
     st.markdown(
         """
@@ -821,7 +821,7 @@ elif page == "Modelo de Regresión":
             """,
             unsafe_allow_html=True
         )
-        st.image(r'../img/flag.png', use_column_width=True)
+        st.image('img/flag.png', use_column_width=True)
         
 
     
