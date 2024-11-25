@@ -39,8 +39,16 @@ st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h3 style="text-indent: 1em;">Temporada 2006</h3>
-            <p style="text-indent: 1em;"> El campeonato 2006, como podemos ver, se caracterizó por 
+            <p style="text-indent: 1em;"> El campeonato 2006, como podemos ver, se caracterizó por un duelo entre Nicky Hayden y Valentino Rossi, que finalmente se terminó
+            llevando el estadounidense tras un final de campeonato muy emocionante. Dani Pedrosa debutaba ese año y se adijudicó un par de victorias a los mandos de su Repsol
+            Honda. 
             </p>
+            <p> Esta temporada se caracterizó por la enorme igualdad y por gran cantidad de ganadores diferentes. Si le echamos un vistazo a la gráfica de puntuación por carrera,
+            vemos que hay mucha variabilidad carrera tras carrera. Es por este motivo que Nicky Hayden pudo hacerse con el título ganando únicamente en dos grandes premios (Holanda
+            y EEUU), mientras que las cinco victorias no le sirvieron a Rossi para ser campeón.</p>
+            <p> A modo de curiosidad: puede que les llame la atención las puntuaciones del gran premio de Catalunya, con una gran cantidad de ceros. Esto fue debido a una
+            caída grupal que tuvo lugar en la salida tras un toque entre el español Sete Gibernau y Loris Capirossi, que terminó haciendo un efecto dominó involucrando a otros pilotos
+            como Marco Melandri y Dani Pedrosa. El vídeo de la salida de ese caótico gran premio se puede visualizar en este link: https://www.youtube.com/watch?v=AOwNOT-BlG8
         </div>
         """,
         unsafe_allow_html=True)
@@ -54,7 +62,9 @@ st.markdown(
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h3 style="text-indent: 1em;">Temporada 2007</h3>
             <p style="text-indent: 1em;"> El año 2007 fue el primero de la llamada era de las 800cc, que sustituyó a las 990cc. Se caracterizó por
-        el dominio de <b>Casey Stoner</b> ya desde la primera carrera.  
+        el dominio de <b>Casey Stoner</b> ya desde la primera carrera. Valentino Rossi y Dani Pedrosa alternaron algunas victorias y se disputaron el segundo puesto
+        del campeonato. Mientras tanto, en la categoría de 250cc Jorge Lorenzo se convertía en bicampeón tras una temporada excelsa y se preparaba para dar el salto
+        a MotoGP.
             </p>
         </div>
         """,
@@ -74,6 +84,8 @@ st.markdown(
         fue de Pedrosa, que pese a contar con tan sólo dos victorias era el más regular. En el Gran Premio de Alemania, con la pista mojada y con Pedrosa de
         cabalgando hacia la victoria, una mala caída en la curva 1 le destrozó el hombro y su lucha por el título mundial se esfumó.   
             </p>
+            <p> En cuanto a Jorge Lorenzo, tuvo un gran inicio de temporada obteniendo tres pole positions consecutivas y una victoria en estoril, pero una
+        serie de caídas a partir de la carrera de Shangai lastraron su buen arranque y acabó teniendo un final de campeonato algo discreto.
         </div>
         """,
         unsafe_allow_html=True)
