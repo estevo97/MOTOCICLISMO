@@ -704,8 +704,8 @@ elif page == "Test de Hipótesis":
         background-color: #f9f9f9; 
         border: 2px solid #dcdcdc; 
         border-radius: 8px; 
-        padding: 20px; 
-        margin: 20px 0;
+        padding: 10px; 
+        margin: 10px 0;
         text-align: center;">
         <p style="font-size: 18px; color: #333; margin-bottom: 15px;">
         La fórmula del modelo de regresión lineal es:
@@ -716,23 +716,49 @@ elif page == "Test de Hipótesis":
 )
 
     st.markdown(
-    """
-        <div style="
-            background-color: white; 
-            border: 2px solid #dcdcdc; 
-            border-radius: 8px; 
-            padding: 20px; 
-            margin: 20px 0; 
-            text-align: center;">
-        """, 
+        """
+        <div style="text-align: center; border-radius: 15px; box-shadow: 0 15 15px rgba(0, 0, 0, 0.2); padding: 10px;">
+            <img src="data:image/png;base64,{}" width="250">
+        </div>
+        """.format(base64.b64encode(open('../img/formula.png', "rb").read()).decode()),
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+    r"""
+    <div style="
+        background-color: #f9f9f9; 
+        border: 2px solid #dcdcdc; 
+        border-radius: 8px; 
+        padding: 10px; 
+        margin: 10px 0;
+        text-align: center;">
+        <p style="font-size: 18px; color: #333; margin-bottom: 15px;">
+        Con nuestros coeficientes, tenemos que:
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+    )
+
+    st.markdown(
+        """
+        <div style="text-align: center; border-radius: 15px; box-shadow: 0 15 15px rgba(0, 0, 0, 0.2); padding: 10px;">
+            <img src="data:image/png;base64,{}" width="250">
+        </div>
+        """.format(base64.b64encode(open('../img/formula_vm.png', "rb").read()).decode()),
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        """
+        <div style="background-color: white; padding: 10px; border-radius: 5px;">
+            <p style="text-indent: 1em;"> El modelo predice que cada año la velocidad media en carrera aumenta en 0.5275 km/h.   
+            </p>
+        </div>
+        """,
         unsafe_allow_html=True)
-
-# Usamos st.latex para renderizar la fórmula
-    st.latex(r"y = \beta_0 + \beta_1 x + \epsilon + \beta_4")
-
-# Cerrar el contenedor
-    st.markdown("</div>", unsafe_allow_html=True)
-
+    
     st.write("")
 
     st.image('img/reglin.jpg', use_column_width=True)
