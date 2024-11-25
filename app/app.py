@@ -847,7 +847,7 @@ elif page == "Test de Hipótesis":
             <h3 style="text-indent: 1em;">Prueba 2a: ALVARO BAUTISTA</h3>
         </div>
         """,
-        unsafe_allow_html=True
+        unsafe_allow_html=True)
 
     st.write("")
 
