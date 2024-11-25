@@ -649,6 +649,7 @@ elif page == "Test de Hipótesis":
                 <li> La velocidad media ha ido aumentando a lo largo de los años
                 <li> Los pilotos españoles rinden mejor en sus circuitos que en el resto 
             </ul>
+            <h3 style="text-indent: 1em;">Prueba de regresión lineal ordinaria</h3>
             <p style="text-indent: 1em;"> Para el primer test se realizará una regresión lineal simple y se comprobarán los p-valores de los coeficientes beta de la regresión. Para el segundo caso se
             hará la prueba de Mann-Whitney:<p/>
         </div>
@@ -778,6 +779,7 @@ elif page == "Test de Hipótesis":
                 <li> Los datos no se ajustan a una distribución normal.
                 <li> Las observaciones se pueden ordenar y son independientes (aunque podrían haber mini-dependencias en los resultados de un piloto concreto). En todo caso, el test más apropiado sigue siendo el de Mann Whitney. 
             </ul>
+            <h3 style="text-indent: 1em;">Prueba 1: TODOS LOS PILOTOS ESPAÑOLES</h3>
         </div>
         """,
         unsafe_allow_html=True)
@@ -810,6 +812,7 @@ elif page == "Test de Hipótesis":
                 <li> Ejemplo B: Alvaro Bautista 
             </ul>
             </p>
+            <h3 style="text-indent: 1em;">Prueba 2a: DANI PEDROSA</h3>
         </div>
         """,
         unsafe_allow_html=True)  
@@ -823,6 +826,7 @@ elif page == "Test de Hipótesis":
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <p style="text-indent: 1em;"> p=0.003 </p>
         <p> <b>Se descarta</b> la hipótesis nula. Dani Pedrosa rinde mejor en los circuitos españoles que en los de fuera. </p>
+        <h3 style="text-indent: 1em;">Prueba 2b: ALVARO BAUTISTA</h3>
         </div>
         """,
         unsafe_allow_html=True)
