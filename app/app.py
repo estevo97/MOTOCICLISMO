@@ -626,9 +626,6 @@ elif page == "Temporadas":
         </div>
         """,
         unsafe_allow_html=True)
-        </div>
-        """,
-        unsafe_allow_html=True)
 
     st.image('img/2008.jpg', use_column_width=True)
 
