@@ -1,17 +1,7 @@
 
 # ANÁLISIS MOTOgpERO
  
-<div style="background-color: #EECCAA; padding: 0px 0px 0px 10px; border-radius: 5px;">
-      <p>Creación y diseño: <b>ESTEVO ARIAS GARCÍA</b></p>
-</div>
-    """,
-  unsafe_allow_html=True)
-    
-
-    
-    st.markdown(
-    """
-    <div style="background-color: white; padding: 20px; border-radius: 10px; font-family: Arial, sans-serif;">
+<div style="background-color: white; padding: 20px; border-radius: 10px; font-family: Arial, sans-serif;">
         <h1 style="text-align: center; color: #2E86C1;">¡Bienvenido a nuestra aplicación!</h1>
         <h2 style="margin-top: 20px; color: #117A65;">Podrá usted consultar:</h2>
         <ul style="list-style-type: square; line-height: 1.8; margin-left: 20px;">
@@ -27,6 +17,3 @@
         <p style="text-indent: 20px; line-height: 1.8;">En pocas semanas, estará disponible la nueva aplicación con la red neuronal <b>InceptionV3</b>, con la que podrá 
         <i>dibujar con el cursor un TRAZADO de un circuito real</i>, y ésta le dirá el nombre del circuito con sus datos y estadísticas.</p>
     </div>
-    """,
-    unsafe_allow_html=True
-)
