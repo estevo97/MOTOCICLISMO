@@ -599,8 +599,10 @@ elif page == "Temporadas":
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h3 style="text-indent: 1em;">Temporada 2007</h3>
             <p style="text-indent: 1em;"> El año 2007 fue el primero de la llamada era de las 800cc, que sustituyó a las 990cc. Se caracterizó por
-        el dominio de <b>Casey Stoner</b> ya desde la primera carrera.  
-            </p>
+        el dominio de <b>Casey Stoner</b> ya desde la primera carrera. Valentino Rossi y Dani Pedrosa alternaron algunas victorias y se disputaron el segundo puesto
+        del campeonato. Mientras tanto, en la categoría de 250cc Jorge Lorenzo se convertía en bicampeón tras una temporada excelsa y se preparaba para dar el salto
+        a MotoGP.
+            </p>  
         </div>
         """,
         unsafe_allow_html=True)
