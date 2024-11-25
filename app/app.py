@@ -548,12 +548,22 @@ elif page == "Temporadas":
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h2 style="text-indent: 1em;">Análisis de temporadas 2006-2010</h2>
-            <p style="text-indent: 1em;"> En este apartado se analizan las temporadas 2006-2010, que son las que se han considerado más relevantes para el análisis de la velocidad media en carrera. 
+            <p style="text-indent: 1em;"> En este apartado se analizan las <b>temporadas 2006-2010</b>, que han sido solicitadas por nuestros seguidores en la encuesta de la semana pasada. 
             </p>
-            <p style="text-indent: 1em;"> Se ha creado un gráfico interactivo con Plotly Express que muestra la evolución de la velocidad media en carrera en las tres categorías desde 2006 hasta 2012. 
+            <p style="text-indent: 1em;"> Se ha creado un linechart para cada uno de los años con Plotly Express que muestra la de las puntuaciones de los 10 mejores pilotos de una temporada. Este tipo de
+            gráficas nos permite detectar patrones de manera sencilla e interpretar correctamente los aspectos más importantes que sucedieron en ese año (además de tirar de la memoria que muchos
+            de los aficionados poseemos).
             </p>
             <h3 style="text-indent: 1em;">Contextualización</h3>
-            <p style="text-indent: 1em;"> En el período 2005 - 2009 se produjo un cambio de paradigma en la categoría reina de motociclismo. 
+            <p style="text-indent: 1em;"> En el período 2005 - 2009 se produjo un cambio de paradigma en la categoría reina de motociclismo. Se venía de 5 títulos consecutivos de 
+            Valentino Rossi y de un dominio apabullante del piloto transalpino. Sin embargo, una floja temporada 2006 del italiano aunada a la irrupción de tres jóvenes pilotos que tenían
+            un estilo de pilotaje innovador, nos trajeron de nuevo unos campeonatos emocionantes en los que se alternaban las victorias el mismo grupo de corredores:
+            <ul style="text-indent: 1em;">
+                <li> Valentino Rossi #46
+                <li> Casey Stoner #27
+                <li> Dani Pedrosa #26
+                <li> Jorge Lorenzo #48 y #99
+            </ul>
             </p>
         </div>
         """,
