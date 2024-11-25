@@ -714,6 +714,22 @@ elif page == "Test de Hipótesis":
     """,
     unsafe_allow_html=True
 )
+
+    st.markdown(
+    """
+    <div style="
+        background-color: white; 
+        border: 2px solid #dcdcdc; 
+        border-radius: 8px; 
+        padding: 20px; 
+        margin: 20px 0;">
+    """,
+    unsafe_allow_html=True
+)
+
+    st.latex(r"y = \beta_0 + \beta_1 x + \epsilon")
+
+    st.markdown("</div>", unsafe_allow_html=True)
   
     st.latex(r"y = \beta_0 + \beta_1 x + \epsilon")
 
