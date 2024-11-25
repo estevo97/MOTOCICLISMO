@@ -53,8 +53,8 @@ st.markdown(
     """,
 unsafe_allow_html=True)
 
-st.image(r'../img/codo_pca.jpg', use_column_width=True)
+st.image('img/codo_pca.jpg', use_column_width=True)
 
 st.write("")
 
-st.image(r'../img/clusters_pca.jpg', use_column_width=True)
+st.image('img/clusters_pca.jpg', use_column_width=True)
