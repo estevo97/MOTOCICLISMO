@@ -257,8 +257,8 @@ st.write("")
 
 st.write("")
     
-st.image('img/los_4_fantasticos.jpg', use_column_width=True)
+st.image('img/vel_anyo_cil.jpg', use_column_width=True)
 
 st.write("")
     
-st.image('img/los_4_fantasticos.jpg', use_column_width=True)
+st.image('img/vel_anyo reina.jpg', use_column_width=True)
