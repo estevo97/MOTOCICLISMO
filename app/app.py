@@ -699,7 +699,7 @@ elif page == "Test de Hipótesis":
     unsafe_allow_html=True)
 
     st.markdown(
-    """
+    r"""
     <div style="
         background-color: #f9f9f9; 
         border: 2px solid #dcdcdc; 
@@ -710,11 +710,13 @@ elif page == "Test de Hipótesis":
         <p style="font-size: 18px; color: #333; margin-bottom: 15px;">
         La fórmula del modelo de regresión lineal es:
         </p>
+        <p style="font-size: 20px; font-family: 'Courier New', monospace; color: #2E86C1;">
+        $$ y = \\beta_0 + \\beta_1 x + \\epsilon $$
+        </p>
     </div>
     """,
     unsafe_allow_html=True
 )
-
     st.latex(r"y = \beta_0 + \beta_1 x + \epsilon")
 
     st.image('img/reglin.jpg', use_column_width=True)
