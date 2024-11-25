@@ -38,7 +38,8 @@ st.markdown(
     </div>
     """,
     unsafe_allow_html=True)
-    st.markdown(
+
+st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h2 style="text-indent: 1em;">Velocidad media en carrera</h2>
