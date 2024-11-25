@@ -702,21 +702,20 @@ elif page == "Test de Hipótesis":
     """
     <div style="
         background-color: #f9f9f9; 
-        border: 1px solid #dcdcdc; 
+        border: 2px solid #dcdcdc; 
         border-radius: 8px; 
-        padding: 15px; 
+        padding: 20px; 
         margin: 20px 0;
         text-align: center;">
-        <p style="font-size: 18px; color: #333;">
+        <p style="font-size: 18px; color: #333; margin-bottom: 15px;">
         La fórmula del modelo de regresión lineal es:
-        </p>
-        <p style="font-size: 20px; font-family: 'Courier New', monospace; color: #2E86C1;">
-        <b>$$ y = \\beta_0 + \\beta_1 x + \\epsilon $$</b>
         </p>
     </div>
     """,
     unsafe_allow_html=True
 )
+
+    st.latex(r"y = \beta_0 + \beta_1 x + \epsilon")
 
     st.image('img/reglin.jpg', use_column_width=True)
 
