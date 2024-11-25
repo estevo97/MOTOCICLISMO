@@ -95,7 +95,7 @@ st.markdown(
     <div style="text-align: center; margin-top: 20px;">
         <img src="data:image/png;base64,{}" width="200" style="border-radius: 15px;">
     </div>
-    """.format(base64.b64encode(open(r'../img/RBF_logo.png', "rb").read()).decode()),
+    """.format(base64.b64encode(open('img/RBF_logo.png', "rb").read()).decode()),
     unsafe_allow_html=True
 )
 
