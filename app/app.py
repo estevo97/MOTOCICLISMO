@@ -778,7 +778,7 @@ elif page == "Modelo de Regresión":
     st.write("")
     import joblib
     import datetime
-    model = joblib.load(r'../model_RF.pkl')
+    model = joblib.load('model_RF.pkl')
 
     st.markdown(
     """
