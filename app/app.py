@@ -649,6 +649,8 @@ elif page == "Test de Hipótesis":
                 <li> La velocidad media ha ido aumentando a lo largo de los años
                 <li> Los pilotos españoles rinden mejor en sus circuitos que en el resto 
             </ul>
+            <p style="text-indent: 1em;"> Para el primer test se realizará una regresión lineal simple y se comprobarán los p-valores de los coeficientes beta de la regresión. Para el segundo caso se
+            hará la prueba de Mann-Whitney:<p/>
         </div>
         """,
         unsafe_allow_html=True)
@@ -764,6 +766,21 @@ elif page == "Test de Hipótesis":
     st.image('img/reglin.jpg', use_column_width=True)
 
     st.write("")
+
+    st.markdown(
+        """
+        <div style="background-color: white; padding: 10px; border-radius: 5px;">
+            <h3 style="text-indent: 1em;">Pruebas de Mann-Whitney</h3>
+            <p style="text-indent: 1em;"> Una pregunta que nos puede surgir a los aficionados es si es cierto aquello de que "corriendo en casa rindes mejor". Podemos comprobar si tal cosa ocurre con nuestros datos haciendo
+            un test de contraste de hipótesis. Para ello, seleccionamos una muestra A con todos los resultados de los pilotos españoles y otra muestra B con sólo los resultados de los españoles en los circuitos espeñoles. Se elige hacer
+            un test de Mann Whitney porque:
+            <ul style="text-indent: 1em;">
+                <li> Los datos no se ajustan a una distribución normal.
+                <li> Las observaciones se pueden ordenar y son independientes (aunque podrían haber mini-dependencias en los resultados de un piloto concreto). En todo caso, el test más apropiado sigue siendo el de Mann Whitney. 
+            </ul>
+        </div>
+        """,
+        unsafe_allow_html=True)
 
     st.image('img/circ_esp.jpg', use_column_width=True)
 
