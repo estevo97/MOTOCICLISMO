@@ -879,7 +879,7 @@ elif page == "Test de Hipótesis":
         """,
         unsafe_allow_html=True)
 
-    st.image("img/mi_imagen.gif", width=400) 
+    st.image("img/stoner_drift.gif", width=700) 
 
 
 elif page == "Modelo de Regresión":
