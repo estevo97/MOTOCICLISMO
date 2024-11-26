@@ -834,7 +834,7 @@ elif page == "Test de Hipótesis":
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <p style="text-indent: 1em;"> p=0.003 </p>
-        <p> <b>Se descarta</b> la hipótesis nula. Dani Pedrosa rinde mejor en los circuitos españoles que en los de fuera. </p>
+            <p> <b>Se descarta</b> la hipótesis nula. Dani Pedrosa rinde mejor en los circuitos españoles que en los de fuera. </p>
         </div>
         """,
         unsafe_allow_html=True)
@@ -857,7 +857,7 @@ elif page == "Test de Hipótesis":
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <p style="text-indent: 1em;"> p=0.929 </p>
-        <p> <b>No podemos rechazar</b> la hipótesis nula. Álvaro Bautista parece rendir igual en los circuitos españoles que en los de fuera. </p>
+            <p> <b>No podemos rechazar</b> la hipótesis nula. Álvaro Bautista parece rendir igual en los circuitos españoles que en los de fuera. </p>
         </div>
         """,
         unsafe_allow_html=True)
@@ -868,12 +868,12 @@ elif page == "Test de Hipótesis":
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h3 style="text-indent: 1em;">Conclusión</h3>
-            <p> <b>No podemos rechazar</b> Hay pilotos a los que sí que les afecta poderosamente el correr en casa o no. Como hemos visto, a Dani se le dan mucho mejor los circuitos de su país que los otros,
+            <p style="text-indent: 1em;"> Hay pilotos a los que sí que les afecta poderosamente el correr en casa o no. Como hemos visto, a Dani se le dan mucho mejor los circuitos de su país que los otros,
             mientras que a Álvaro Bautista no se le dan específicamente mejor los circuitos españoles. </p>
-            <p> <b>No podemos rechazar</b> Son varias las lecturas que se pueden sacar de este fenónemo. Es posible que llame la atención el hecho de que un piloto considerado un fuera de serie tenga tanta preferencia por
+            <p style="text-indent: 1em;"> Son varias las lecturas que se pueden sacar de este fenónemo. Es posible que llame la atención el hecho de que un piloto considerado un fuera de serie tenga tanta preferencia por
             los circuitos patrios, cuando lo normal sería que rindiese muy bien en todos mientras que pilotos más terrenales, como el propio Bautista, tuviese mejores resultados en los circuitos de casa, ya no solo por el apoyo
             del público y la motivación, sino por estar más familiarizado con estos trazados al haber disputado campeonatos de categorías inferiores en ellos. </p>
-            <p> <b>No podemos rechazar</b> Sin embargo, esa lectura podría ser muy simplista: sin ir más lejos, Valentino Rossi tuvo una larga racha de victorias consecitivas en el circuito de Muguello (siete seguidas), y lo mismo 
+            <p style="text-indent: 1em;"> Sin embargo, esa lectura podría ser muy simplista: sin ir más lejos, Valentino Rossi tuvo una larga racha de victorias consecitivas en el circuito de Muguello (siete seguidas), y lo mismo 
             sucedió con Casey Stoner en Phillips Island (seis victorias consecutivas del 2007 al 2012). Como vemos, incluso los más grandes pueden tener mejores resultados en los circuitos de su país. </p>
         </div>
         """,
