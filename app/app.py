@@ -880,7 +880,7 @@ elif page == "Test de Hipótesis":
         unsafe_allow_html=True)
 
     st.image("img/stoner_drift.gif", width=700)
-        st.markdown(
+    st.markdown(
         """
         <div style="background-color: white; padding: 0px; border-radius: 5px;">
             <p style="text-indent: 1em; font-size: 3.6mm;">     
