@@ -885,7 +885,7 @@ elif page == "Test de Hipótesis":
         <div style="background-color: white; padding: 0px; border-radius: 5px;">
             <p style="text-indent: 1em; font-size: 3.6mm;">     
             <b>Casey Stoner</b> haciendo uno de sus célebres drinftings en Phillips Island. 
-            Fuente: Reddit | Link: https://www.reddit.com/r/pics/comments/lic6g/casey_stoner_powersliding_his_motorcycle_at_80/?rdt=41597 </p>
+            Fuente: Reddit | <a href="https://www.reddit.com/r/pics/comments/lic6g/casey_stoner_powersliding_his_motorcycle_at_80/?rdt=41597" target="_blank"> Link </a></p>
         </div>
         """,
         unsafe_allow_html=True)
