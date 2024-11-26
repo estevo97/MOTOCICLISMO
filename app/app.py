@@ -868,13 +868,13 @@ elif page == "Test de Hipótesis":
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h3 style="text-indent: 1em;">Conclusión</h3>
-            <p style="text-indent: 1em;"> Hay pilotos a los que sí que les afecta poderosamente el correr en casa o no. Como hemos visto, a Dani se le dan mucho mejor los circuitos de su país que los otros,
+            <p style="text-indent: 1em;"> Hay pilotos a los que sí que les afecta poderosamente el correr en casa o no. Como hemos visto, a <b> Dani </b> se le dan <b> mucho mejor los circuitos de su país </b> que los otros,
             mientras que a Álvaro Bautista no se le dan específicamente mejor los circuitos españoles. </p>
             <p style="text-indent: 1em;"> Son varias las lecturas que se pueden sacar de este fenónemo. Es posible que llame la atención el hecho de que un piloto considerado un fuera de serie tenga tanta preferencia por
-            los circuitos patrios, cuando lo normal sería que rindiese muy bien en todos mientras que pilotos más terrenales, como el propio Bautista, tuviese mejores resultados en los circuitos de casa, ya no solo por el apoyo
-            del público y la motivación, sino por estar más familiarizado con estos trazados al haber disputado campeonatos de categorías inferiores en ellos. </p>
-            <p style="text-indent: 1em;"> Sin embargo, esa lectura podría ser muy simplista: sin ir más lejos, Valentino Rossi tuvo una larga racha de victorias consecitivas en el circuito de Muguello (siete seguidas), y lo mismo 
-            sucedió con Casey Stoner en Phillips Island (seis victorias consecutivas del 2007 al 2012). Como vemos, incluso los más grandes pueden tener mejores resultados en los circuitos de su país. </p>
+            los circuitos patrios, cuando lo normal sería que <b> rindiese muy bien en todos </b> mientras que pilotos más terrenales, como el propio Bautista, obtuviese mejores resultados en los circuitos de casa, ya no solo por el apoyo
+            del público y la motivación, sino por estar <b> más familiarizado </b> con estos trazados al haber disputado campeonatos de categorías inferiores en ellos. </p>
+            <p style="text-indent: 1em;"> Sin embargo, esa lectura podría ser muy simplista: sin ir más lejos, Valentino Rossi tuvo una <b> larga racha de victorias consecitivas </b> en el circuito de Muguello (siete seguidas), y lo mismo 
+            sucedió con <b> Casey Stoner en Phillips Island </b> (seis victorias consecutivas del 2007 al 2012). Como vemos, incluso los más grandes pueden tener mejores resultados en los circuitos de su país. </p>
         </div>
         """,
         unsafe_allow_html=True)
