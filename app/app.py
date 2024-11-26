@@ -879,7 +879,16 @@ elif page == "Test de Hipótesis":
         """,
         unsafe_allow_html=True)
 
-    st.image("img/stoner_drift.gif", width=700) 
+    st.image("img/stoner_drift.gif", width=700)
+        st.markdown(
+        """
+        <div style="background-color: white; padding: 0px; border-radius: 5px;">
+            <p style="text-indent: 1em; font-size: 3.6mm;">     
+            <b>Casey Stoner</b> haciendo uno de sus célebres drinftings en Phillips Island. 
+            Fuente: Reddit | Link: https://www.reddit.com/r/pics/comments/lic6g/casey_stoner_powersliding_his_motorcycle_at_80/?rdt=41597 </p>
+        </div>
+        """,
+        unsafe_allow_html=True)
 
 
 elif page == "Modelo de Regresión":
