@@ -877,7 +877,9 @@ elif page == "Test de Hipótesis":
             sucedió con Casey Stoner en Phillips Island (seis victorias consecutivas del 2007 al 2012). Como vemos, incluso los más grandes pueden tener mejores resultados en los circuitos de su país. </p>
         </div>
         """,
-        unsafe_allow_html=True) 
+        unsafe_allow_html=True)
+
+    st.image("img/mi_imagen.gif", width=400) 
 
 
 elif page == "Modelo de Regresión":
