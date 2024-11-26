@@ -631,9 +631,32 @@ elif page == "Temporadas":
 
     st.write("")
 
+    st.markdown(
+        """
+        <div style="background-color: white; padding: 10px; border-radius: 5px;">
+            <h3 style="text-indent: 1em;">Temporada 2008</h3>
+            <p style="text-indent: 1em;"> El campeonato del 2009 se caracterizó por una lucha entre compañeros de equipo, Jorge Lorenzo y Valentino Rossi, que fue muy emocionante
+            hasta las últimas carreras y que se llevó el italiano, consiguiendo su séptimo título en la máxima categoría. Pedrosa tuvo un año muy irregular y sólo consiguió dos victorias, mientras que Stoner
+            estuvo apartado de las carreras durante algunos meses debido a una enfermedad. 
+            </p>
+            <p> Para el recuerdo queda la carrera del Gran Premio de Catalunya del 2009, en donde Rossi logró sobrepasar a Lorenzo en la última curva de la última vuelta y ganar con ello la carrera.
+        </div>
+        """,
+        unsafe_allow_html=True)
+
     st.image('img/2009.jpg', use_column_width=True)
 
     st.write("")
+
+    st.markdown(
+        """
+        <div style="background-color: white; padding: 10px; border-radius: 5px;">
+            <h3 style="text-indent: 1em;">Temporada 2008</h3>
+            <p style="text-indent: 1em;"> La temporada 2010 tuvo un dominio apabullante del piloto mallorquín Lorenzo. Como se puede ver en la gráfica, en las 10 primeras carreras 
+            consiguió 7 victorias y no bajó del segundo puesto. Subió al podio en todas las carreras salvo en dos y ganó con claridad sobre Pedrosa, quien esta vez ganó en 4 carreras.
+        </div>
+        """,
+        unsafe_allow_html=True)
 
     st.image('img/2010.jpg', use_column_width=True)
 
