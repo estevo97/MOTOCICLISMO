@@ -307,7 +307,7 @@ elif page == "Limpieza":
     )  
     st.write("")
 
-    st.image('img/boxplot_speed.jpg', use_column_width=True)
+    st.image('img/boxplot_speed.jpg', use_container_width=True)
     
     st.write("")
     st.markdown(
@@ -411,15 +411,15 @@ elif page == "EDA":
     
     st.write("")
 
-    st.image('img/velocidad.jpg', use_column_width=True)
+    st.image('img/velocidad.jpg', use_container_width=True)
     
     st.write("")
 
-    st.image('img/velocidad_3_jorobas.jpg', use_column_width=True)
+    st.image('img/velocidad_3_jorobas.jpg', use_container_width=True)
     
     st.write("")
 
-    st.image('img/cilindradas_antiguas.jpg', use_column_width=True)
+    st.image('img/cilindradas_antiguas.jpg', use_container_width=True)
     
     st.write("")
 
@@ -457,7 +457,7 @@ elif page == "EDA":
     
     st.write("")
     
-    st.image('img/los_4_fantasticos.jpg', use_column_width=True)
+    st.image('img/los_4_fantasticos.jpg', use_container_width=True)
 
     st.markdown(
         """
@@ -590,7 +590,7 @@ elif page == "Temporadas":
         """,
         unsafe_allow_html=True)
 
-    st.image('img/2006.jpg', use_column_width=True)
+    st.image('img/2006.jpg', use_container_width=True)
 
     st.write("")
 
@@ -607,7 +607,7 @@ elif page == "Temporadas":
         """,
         unsafe_allow_html=True)
 
-    st.image('img/2007.jpg', use_column_width=True)
+    st.image('img/2007.jpg', use_container_width=True)
 
     st.write("")
 
@@ -627,7 +627,7 @@ elif page == "Temporadas":
         """,
         unsafe_allow_html=True)
 
-    st.image('img/2008.jpg', use_column_width=True)
+    st.image('img/2008.jpg', use_container_width=True)
 
     st.write("")
 
@@ -644,7 +644,7 @@ elif page == "Temporadas":
         """,
         unsafe_allow_html=True)
 
-    st.image('img/2009.jpg', use_column_width=True)
+    st.image('img/2009.jpg', use_container_width=True)
 
     st.write("")
 
@@ -658,7 +658,7 @@ elif page == "Temporadas":
         """,
         unsafe_allow_html=True)
 
-    st.image('img/2010.jpg', use_column_width=True)
+    st.image('img/2010.jpg', use_container_width=True)
 
 
 
@@ -787,7 +787,7 @@ elif page == "Test de Hipótesis":
     
     st.write("")
 
-    st.image('img/reglin.jpg', use_column_width=True)
+    st.image('img/reglin.jpg', use_container_width=True)
 
     st.write("")
 
@@ -807,11 +807,11 @@ elif page == "Test de Hipótesis":
         """,
         unsafe_allow_html=True)
 
-    st.image('img/circ_esp.jpg', use_column_width=True)
+    st.image('img/circ_esp.jpg', use_container_width=True)
 
     st.write("")
 
-    st.image('img/circ_esp_vio.jpg', use_column_width=True)
+    st.image('img/circ_esp_vio.jpg', use_container_width=True)
 
     st.write("")
 
@@ -851,7 +851,7 @@ elif page == "Test de Hipótesis":
     
     st.write("")
 
-    st.image('img/circ_pedr_vio.jpg', use_column_width=True)
+    st.image('img/circ_pedr_vio.jpg', use_container_width=True)
 
     st.markdown(
         """
@@ -874,7 +874,7 @@ elif page == "Test de Hipótesis":
 
     st.write("")
 
-    st.image('img/circ_bau_vio.jpg', use_column_width=True) 
+    st.image('img/circ_bau_vio.jpg', use_container_width=True) 
 
     st.markdown(
         """
@@ -1005,7 +1005,7 @@ elif page == "Modelo de Regresión":
             """,
             unsafe_allow_html=True
         )
-        st.image('img/flag.png', use_column_width=True)
+        st.image('img/flag.png', use_container_width=True)
         
 
     
