@@ -1,7 +1,7 @@
 
 # 🏁 Análisis motogpero 🏍️
 
-<img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">        <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">
+<img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">    &nbsp;&nbsp;&nbsp    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">
 
 
 ### Autor: ESTEVO ARIAS GARCÍA
