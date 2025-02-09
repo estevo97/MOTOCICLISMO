@@ -1,5 +1,5 @@
 
-# 🏁 Análisis moto<span style="background-color: #4CAF50; color: white; padding: 3px; border-radius: 3px;">GP</span>ero 🏍️
+# 🏁 Análisis motoGPero 🏍️
 
 <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">
 
