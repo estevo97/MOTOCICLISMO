@@ -3,8 +3,6 @@
 
 <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">
 
-<img src="img/lh3.png" style="margin-right: 20px; display: inline-block;">
- 
 <div style="background-color: white; padding: 20px; border-radius: 10px; font-family: Arial, sans-serif;">
         <h1 style="text-align: center; color: #2E86C1;">¡Bienvenido a nuestra aplicación!</h1>
         <h2 style="margin-top: 20px; color: #117A65;">Podrá usted consultar:</h2>
