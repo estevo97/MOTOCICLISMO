@@ -23,4 +23,4 @@
         <i>dibujar con el cursor un TRAZADO de un circuito real</i>, y ésta le dirá el nombre del circuito con sus datos y estadísticas.</p>
     </div>
 
-## Ver proyecto en Streamlit: https://motociclismoproyectofinal3232.streamlit.app/
+#### Ver proyecto en Streamlit: https://motociclismoproyectofinal3232.streamlit.app/
