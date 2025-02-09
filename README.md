@@ -1,6 +1,45 @@
 
 # Análisis motoGPero
 
+ <head>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    </head>
+    <div style="background: linear-gradient(to bottom, white, gray); 
+                padding: 10px; 
+                border-radius: 5px; 
+                display: flex; 
+                flex-direction: column; 
+                align-items: flex-start; 
+                gap: 10px; 
+                font-family: 'Black Ops One', sans-serif; 
+                color: #333;">
+        <div style="display: flex; align-items: center;">
+            <img src="data:image/png;base64,{}" width="100">
+            <div style="display: flex; flex-direction: column; margin-left: 30px;">
+                <h1 style="font-family: 'Black Ops One', sans-serif; color: #333; margin-left: 0; display: inline">
+                    <span style="
+                        background-color: #4CAF60; 
+                        color: white; 
+                        padding: 0px 0px 0px 9px; /* Arriba, derecha, abajo, izquierda */ 
+                        border-radius: 3px;
+                        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);">
+                        An
+                    </span>álisis 
+                </h1>
+                <h1 style="font-family: 'Black Ops One', sans-serif; color: #333; margin-left: 90px; display: inline;">
+                    moto<span style="
+                        background-color: #4CAF60; 
+                        color: white; 
+                        padding: 0px 0px 0px 0px; 
+                        border-radius: 3px;
+                        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);">
+                        GP
+                    </span>ero
+                </h1>
+            </div>
+            <img src="data:image/png;base64,{}" width="100">
+        </div>
+    </div>
 
 ### Autor: ESTEVO ARIAS GARCÍA
  
