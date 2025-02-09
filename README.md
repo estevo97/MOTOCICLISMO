@@ -1,5 +1,5 @@
 
-# ANÁLISIS MOTOgpERO
+# Análisis motoGPero
 
 ## Autor: ESTEVO ARIAS GARCÍA
  
@@ -19,3 +19,5 @@
         <p style="text-indent: 20px; line-height: 1.8;">En pocas semanas, estará disponible la nueva aplicación con la red neuronal <b>InceptionV3</b>, con la que podrá 
         <i>dibujar con el cursor un TRAZADO de un circuito real</i>, y ésta le dirá el nombre del circuito con sus datos y estadísticas.</p>
     </div>
+
+## Ver proyecto en Streamlit: https://motociclismoproyectofinal3232.streamlit.app/
