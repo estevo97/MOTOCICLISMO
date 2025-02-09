@@ -1,5 +1,5 @@
 
-# 🏁 Análisis motogpero 🏍️
+# 🏁 Análisis motoGPero 🏍️
 
 <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="img/icon_moto.png" width="100" style="margin-right: 20px; display: inline-block;">
 
