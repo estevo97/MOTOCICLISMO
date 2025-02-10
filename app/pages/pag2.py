@@ -70,10 +70,7 @@ st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h3 style="text-indent: 1em;">Velocidad media en carrera</h3>
-            <p style="text-indent: 1em;"> La velocidad media de un gran premio de motociclismo depende, sobre todo, del trazado, las condiciones climáticas y 
-            de la cilindrada. La varianza de la velocidad media entre los pilotos que terminaron la carrera pequeña. Pongamos, por ejemplo, la 
-            carrera de MotoGP en el circuito de Misano en 2021: como vemos, el ganador Marc Marquez tuvo una velocidad promedio de
-            163.4 kilómetros por hora, mientras que el último piloto en terminar la carrera, Taaki Nakagami, tuvo un promedio de 158.2 km/h.
+            <p style="text-indent: 1em;"> Velocidad media en carrera durante el GP de San Marino 2021 (circuito de Misano).
             </p>
         </div>
         """,
@@ -111,8 +108,8 @@ st.write("")
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            Creación de gráficos en de densidad con el suavizado de Kernel para la velocidad media por carrera desde el año 2000. 
-            En la segunda gráfica se desglosa en tres categorías (categoría reina, segunda categoría y tercera categoría).
+            Densidad con suavizado de Kernel para la velocidad media en carrera desde el año 2000. 
+            En la segunda gráfica se desglosa en tres categorías: reina, intermedia y ligera.
             </p>
         </div>
         """,
