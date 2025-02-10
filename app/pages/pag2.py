@@ -61,7 +61,7 @@ st.markdown(
             gap: 10px; 
             font-family: 'Sofia', sans-serif; 
             color: #335577;">
-        <h1 style="font-family: 'Tangerine', sans-serif; color: #002200; margin-right: -17px;">Análisis exploratorio detallado</h1> 
+        <h2 style="font-family: 'Tangerine', sans-serif; color: #002200; margin-right: -17px;">EDA DETALLADO</h2> 
     </div>
     """,
     unsafe_allow_html=True)
@@ -69,7 +69,7 @@ st.markdown(
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h2 style="text-indent: 1em;">Velocidad media en carrera</h2>
+            <h3 style="text-indent: 1em;">Velocidad media en carrera</h3>
             <p style="text-indent: 1em;"> La velocidad media de un gran premio de motociclismo depende, sobre todo, del trazado, las condiciones climáticas y 
             de la cilindrada. La varianza de la velocidad media entre los pilotos que terminaron la carrera pequeña. Pongamos, por ejemplo, la 
             carrera de MotoGP en el circuito de Misano en 2021: como vemos, el ganador Marc Marquez tuvo una velocidad promedio de
