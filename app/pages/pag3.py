@@ -21,7 +21,7 @@ from pycaret.regression import load_model
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h2 style="text-indent: 1em;">Análisis de reaultados de pilotos por temporada</h2>
+            <h3 style="text-indent: 1em;">Análisis de reaultados de pilotos por temporada</h3>
         </div>
         """,
         unsafe_allow_html=True)
@@ -31,7 +31,7 @@ st.write("")
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Temporada 2006</h3>
+            <h4 style="text-indent: 1em;">Temporada 2006</h4>
         </div>
         """,
         unsafe_allow_html=True)
@@ -43,7 +43,7 @@ st.write("")
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Temporada 2007</h3>
+            <h4 style="text-indent: 1em;">Temporada 2007</h4>
         </div>
         """,
         unsafe_allow_html=True)
@@ -55,7 +55,7 @@ st.write("")
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Temporada 2008</h3>
+            <h4 style="text-indent: 1em;">Temporada 2008</h4>
         </div>
         """,
         unsafe_allow_html=True)
@@ -67,7 +67,7 @@ st.write("")
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Temporada 2009</h3>
+            <h4 style="text-indent: 1em;">Temporada 2009</h4>
         </div>
         """,
         unsafe_allow_html=True)
@@ -79,7 +79,7 @@ st.write("")
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Temporada 2010</h3>
+            <h4 style="text-indent: 1em;">Temporada 2010</h4>
         </div>
         """,
         unsafe_allow_html=True)
