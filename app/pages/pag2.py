@@ -69,7 +69,7 @@ st.markdown(
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <span margin-right: 5px;">&#9658;</span><h3 style="text-indent: 1em;">Velocidad media en carrera</h3>
+            <span margin-right: 5px;">&#9658;</span> <h3 style="text-indent: 1em;">Velocidad media en carrera</h3>
             <p style="text-indent: 1em;"> Velocidad media en carrera durante el GP de San Marino 2021 (circuito de Misano).
             </p>
         </div>
