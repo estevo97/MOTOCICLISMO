@@ -21,9 +21,7 @@ from pycaret.regression import load_model
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h2 style="text-indent: 1em;">Análisis de temporadas 2006-2010</h2>
-            <p style="text-indent: 1em;"> En este apartado se analizan las temporadas 2006-2010, que son las que se han considerado más relevantes para el análisis de la velocidad media en carrera. 
-            </p>
+            <h2 style="text-indent: 1em;">Análisis de reaultados de pilotos por temporada</h2>
         </div>
         """,
         unsafe_allow_html=True)
