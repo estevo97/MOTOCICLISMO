@@ -120,19 +120,19 @@ st.markdown(
     
 st.write("")
 
-st.image('img/velocidad.jpg', use_column_width=True)
+st.image('img/velocidad.jpg', use_container_width=True)
     
 st.write("")
 
-st.image('img/velocidad_3_jorobas.jpg', use_column_width=True)
+st.image('img/velocidad_3_jorobas.jpg', use_container_width=True)
     
 st.write("")
 
-st.image('img/cilindradas_antiguas.jpg', use_column_width=True)
+st.image('img/cilindradas_antiguas.jpg', use_container_width=True)
     
 st.write("")
 
-st.image('img/velocidades_antiguas.jpg', use_column_width=True)
+st.image('img/velocidades_antiguas.jpg', use_container_width=True)
     
 st.write("")
 
@@ -170,7 +170,7 @@ st.markdown(
     
 st.write("")
     
-st.image('img/los_4_fantasticos.jpg', use_column_width=True)
+st.image('img/los_4_fantasticos.jpg', use_container_width=True)
 
 st.markdown(
         """
@@ -257,8 +257,8 @@ st.write("")
 
 st.write("")
     
-st.image('img/vel_anyo_cil.jpg', use_column_width=True)
+st.image('img/vel_anyo_cil.jpg', use_container_width=True)
 
 st.write("")
     
-st.image('img/vel_anyo_reina.jpg', use_column_width=True)
+st.image('img/vel_anyo_reina.jpg', use_container_width=True)
