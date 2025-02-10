@@ -21,7 +21,7 @@ from pycaret.regression import load_model
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Análisis de reaultados de pilotos por temporada</h3>
+            <h2 style="text-indent: 1em;">Análisis de resultados por temporada</h2>
         </div>
         """,
         unsafe_allow_html=True)
