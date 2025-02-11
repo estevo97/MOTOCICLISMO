@@ -47,11 +47,6 @@ tabla8 = tabla8.drop(tabla8.columns[0], axis=1)
 url_victorias = st.secrets.get("POWERBI_URL_victorias")
 url_velocidad_victorias = st.secrets.get("POWERBI_URL_velocidad_victorias")
 
-st.write("")
-
-components.iframe(url_victorias, height=450, width=700)
-
-st.write("")
 
 st.markdown(
     """
@@ -111,7 +106,13 @@ with col2:
         """,
         unsafe_allow_html=True
     ) 
-    
+
+
+st.write("")
+
+components.iframe(url_velocidad_victorias, height=450, width=700)
+
+st.write("")
 st.write("")
 st.write("")
         
