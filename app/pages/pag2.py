@@ -63,7 +63,7 @@ st.markdown(
             gap: 10px; 
             font-family: 'Sofia', sans-serif; 
             color: #335577;">
-        <h2 style='Tangerine', serif, sans-serif; color: #002200; margin-right: -17px;">EDA DETALLADO</h2> 
+        <h2 style='Font Name', serif, sans-serif; color: #002200; margin-right: -17px;">EDA DETALLADO</h2> 
     </div>
     """,
     unsafe_allow_html=True)
