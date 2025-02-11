@@ -149,14 +149,6 @@ st.image('img/velocidad_3_jorobas.jpg', use_container_width=True)
     
 st.write("")
 
-st.image('img/cilindradas_antiguas.jpg', use_container_width=True)
-    
-st.write("")
-
-st.image('img/velocidades_antiguas.jpg', use_container_width=True)
-    
-st.write("")
-
 st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
