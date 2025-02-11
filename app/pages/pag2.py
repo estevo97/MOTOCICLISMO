@@ -1,4 +1,4 @@
-import streamlit as st
+vimport streamlit as st
 import streamlit.components.v1 as components
 from streamlit_option_menu import option_menu
 import numpy as np
@@ -45,6 +45,13 @@ tabla8 = pd.read_csv('tablas/paises_antes_500.csv')
 tabla8 = tabla8.drop(tabla8.columns[0], axis=1)
 
 url_victorias = st.secrets.get("POWERBI_URL_victorias")
+url_velocidad_victorias = st.secrets.get("POWERBI_URL_velocidad_victorias")
+
+st.write("")
+
+components.iframe(url_velocidad_victorias, height=450, width=700)
+
+st.write("")
 
 st.markdown(
     """
