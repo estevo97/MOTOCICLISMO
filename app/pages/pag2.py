@@ -74,6 +74,7 @@ st.markdown(
         <div style="display: flex; align-items: center;">
             <span style="color: black; margin-right: 5px;">&#9658;</span>
             <h3 style="margin: 0;">Velocidad media en carrera</h3>
+            <p style="text-indent: 1em;">Velocidad media en carrera desde la temporada 2000 por circuito y categoría.</p>
         </div>
     </div>
     """,
