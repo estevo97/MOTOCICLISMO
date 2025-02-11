@@ -75,6 +75,23 @@ st.markdown(
             <span style="color: black; margin-right: 5px;">&#9658;</span>
             <h3 style="margin: 0;">Velocidad media en carrera</h3>
         </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+    
+
+st.write("")
+
+components.iframe(url_velocidad_victorias, height=450, width=700)
+
+st.write("")
+
+st.markdown(
+    """
+    <div style="background-color: white; padding: 10px; border-radius: 5px;">
+        <div style="display: flex; align-items: center;">
+        </div>
         <p style="text-indent: 1em;">Velocidad media en carrera durante el GP de San Marino 2021 (circuito de Misano).</p>
     </div>
     """,
@@ -107,12 +124,6 @@ with col2:
         unsafe_allow_html=True
     ) 
 
-
-st.write("")
-
-components.iframe(url_velocidad_victorias, height=450, width=700)
-
-st.write("")
 st.write("")
 st.write("")
         
