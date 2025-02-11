@@ -49,7 +49,7 @@ url_velocidad_victorias = st.secrets.get("POWERBI_URL_velocidad_victorias")
 
 st.write("")
 
-components.iframe(url_velocidad_victorias, height=450, width=700)
+components.iframe(url_victorias, height=450, width=700)
 
 st.write("")
 
