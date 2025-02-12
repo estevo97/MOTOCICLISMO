@@ -89,6 +89,10 @@ components.iframe(url_velocidad_victorias, height=450, width=700)
 
 st.write("")
 
+st.markdown("https://uphubgrade-my.sharepoint.com/:p:/g/personal/estevo_arias_bootcamp-upgrade_com/EewFa1jzQGJGsS8zgiSxXbIBwYZiZ5idIzelo7WKZrU1yg?e=YuiV5T")
+
+st.write("")
+
 st.markdown(
     """
     <div style="background-color: white; padding: 10px; border-radius: 5px;">
