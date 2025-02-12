@@ -87,9 +87,6 @@ st.write("")
 
 components.iframe(url_velocidad_victorias, height=450, width=700)
 
-st.write("")
-components.iframe(url_speed, height=450, width=700)
-st.write("")
 
 st.markdown(
     """
@@ -142,14 +139,9 @@ st.markdown(
         unsafe_allow_html=True)    
     
 st.write("")
-
-st.image('img/velocidad.jpg', use_container_width=True)
-    
+components.iframe(url_speed, height=450, width=700)
 st.write("")
 
-st.image('img/velocidad_3_jorobas.jpg', use_container_width=True)
-    
-st.write("")
 
 st.markdown(
         """
