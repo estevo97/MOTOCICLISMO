@@ -46,7 +46,7 @@ tabla8 = tabla8.drop(tabla8.columns[0], axis=1)
 
 url_victorias = st.secrets.get("POWERBI_URL_victorias")
 url_velocidad_victorias = st.secrets.get("POWERBI_URL_velocidad_victorias")
-
+url_speed = st.secrets.get("SPEED")
 
 st.markdown(
     """
@@ -88,12 +88,7 @@ st.write("")
 components.iframe(url_velocidad_victorias, height=450, width=700)
 
 st.write("")
-st.markdown(
-    """
-    <iframe width="760px" height="500px" src="https://sway.cloud.microsoft/s/cbAoRYyPFehw4VbM/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
-    """,
-    unsafe_allow_html=True
-)
+components.iframe(url_speed, height=450, width=700)
 st.write("")
 
 st.markdown(
