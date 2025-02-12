@@ -89,8 +89,7 @@ components.iframe(url_velocidad_victorias, height=450, width=700)
 
 st.write("")
 
-st.components.v1.iframe('<iframe src="https://uphubgrade-my.sharepoint.com/personal/estevo_arias_bootcamp-upgrade_com/_layouts/15/Doc.aspx?sourcedoc={586b05ec-40f3-4662-b12f-338224b15db2}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">Esto es un archivo de presentación de <a target="_blank" 
-href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>', width=800, height=600)
+st.components.v1.iframe('<iframe src="https://uphubgrade-my.sharepoint.com/personal/estevo_arias_bootcamp-upgrade_com/_layouts/15/Doc.aspx?sourcedoc={586b05ec-40f3-4662-b12f-338224b15db2}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">Esto es un archivo de presentación de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>', width=800, height=600)
 st.write("")
 
 st.markdown(
