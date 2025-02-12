@@ -88,7 +88,12 @@ st.write("")
 components.iframe(url_velocidad_victorias, height=450, width=700)
 
 st.write("")
-st.components.v1.iframe('<iframe src="https://uphubgrade-my.sharepoint.com/personal/estevo_arias_bootcamp-upgrade_com/_layouts/15/Doc.aspx?sourcedoc={586b05ec-40f3-4662-b12f-338224b15db2}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">Esto es un archivo de presentación de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>')
+st.markdown(
+    """    
+    <iframe width="760px" height="500px" src="https://sway.cloud.microsoft/s/cbAoRYyPFehw4VbM/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+    """,
+    unsafe_allow_html=True
+)
 st.write("")
 
 st.markdown(
