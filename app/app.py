@@ -77,7 +77,7 @@ st.sidebar.markdown(
             <li>app</li>
             <li>pag 1: Descriptiva vbles.</li>
             <li>pag 2: EDA detallado</li>
-            <li>pag 3: Análisis temporadas 2006-2012</li>
+            <li>pag 3: Análisis temporadas</li>
             <li>pag 4: Modelo NO SUPERVISADO</li>
         </ul>
     </div>
