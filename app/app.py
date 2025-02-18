@@ -67,7 +67,7 @@ st.set_page_config(
 st.sidebar.markdown(
     """
     <div style="
-        background-color: #aa4433; 
+        background-color: #999999; 
         padding: 15px; 
         border-radius: 10px; 
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
