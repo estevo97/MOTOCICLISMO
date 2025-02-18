@@ -74,7 +74,6 @@ st.sidebar.markdown(
         font-size: 14px; 
         color: #ffffff;">
         <ul style="list-style-type: square; padding-left: 20px;">
-            <li>app</li>
             <li>pag 1: Descriptiva vbles.</li>
             <li>pag 2: EDA detallado</li>
             <li>pag 3: Análisis temporadas</li>
