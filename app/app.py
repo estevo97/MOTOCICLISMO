@@ -148,7 +148,7 @@ def add_bg_from_local(image_file):
     unsafe_allow_html=True
 )
 
-add_bg_from_local('img/fire_background.jpg')
+add_bg_from_local('img/vidriera.png')
 
 # ---------------------BODY----------------------#
 
