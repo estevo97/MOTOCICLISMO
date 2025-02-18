@@ -75,13 +75,12 @@ st.sidebar.markdown(
         color: #ffffff;">
         <h3 style="color: #ffffff;">Índice</h3>
         <ul style="list-style-type: square; padding-left: 20px;">
-            <li>App</li>
-            <li>Pag 1: Descriptiva vbles.</li>
-            <li>Pag 2: EDA detallado</li>
-            <li>Pag 3: Análisis temporadas 2006-2012</li>
-            <li>Pag 4: Modelo NO SUPERVISADO</li>
+            <li>app</li>
+            <li>pag 1: Descriptiva vbles.</li>
+            <li>pag 2: EDA detallado</li>
+            <li>pag 3: Análisis temporadas 2006-2012</li>
+            <li>pag 4: Modelo NO SUPERVISADO</li>
         </ul>
-        <p style="font-size: 12px; color: #ffffff;">Para ver estas secciones, haga click en el nombre de éstas en la parte superior del sidebar.</p>
     </div>
     """,
     unsafe_allow_html=True
