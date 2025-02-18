@@ -73,7 +73,6 @@ st.sidebar.markdown(
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
         font-size: 14px; 
         color: #ffffff;">
-        <h3 style="color: #ffffff;">Índice</h3>
         <ul style="list-style-type: square; padding-left: 20px;">
             <li>app</li>
             <li>pag 1: Descriptiva vbles.</li>
