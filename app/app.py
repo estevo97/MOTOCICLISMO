@@ -23,37 +23,37 @@ import os
 
 # ---------------------CARGAS PREVIAS----------------------#
 
-tabla1 = pd.read_csv('tablas/tabla1.csv')
+tabla1 = pd.read_csv('../tablas/tabla1.csv')
 tabla1 = tabla1.rename(columns={tabla1.columns[0]: "Parámetro"})
 
-tabla2 = pd.read_csv('tablas/cuantiles.csv')
+tabla2 = pd.read_csv('../tablas/cuantiles.csv')
 tabla2 = tabla2.drop(tabla2.columns[0], axis=1)
 
-tabla3 = pd.read_csv('tablas/top3.csv')
+tabla3 = pd.read_csv('../tablas/top3.csv')
 tabla3 = tabla3.drop(tabla3.columns[0], axis=1)
 
-tabla4 = pd.read_csv('tablas/last3.csv')
+tabla4 = pd.read_csv('../tablas/last3.csv')
 tabla4 = tabla4.drop(tabla4.columns[0], axis=1)
 
 
 
-tabla5 = pd.read_csv('tablas/paises_all.csv')
+tabla5 = pd.read_csv('../tablas/paises_all.csv')
 tabla5 = tabla5.drop(tabla5.columns[0], axis=1)
 
-tabla6 = pd.read_csv('tablas/paises_500GP.csv')
+tabla6 = pd.read_csv('../tablas/paises_500GP.csv')
 tabla6 = tabla6.drop(tabla6.columns[0], axis=1)
 
-tabla7 = pd.read_csv('tablas/paises_antes.csv')
+tabla7 = pd.read_csv('../tablas/paises_antes.csv')
 tabla7 = tabla7.drop(tabla7.columns[0], axis=1)
 
-tabla8 = pd.read_csv('tablas/paises_antes_500.csv')
+tabla8 = pd.read_csv('../tablas/paises_antes_500.csv')
 tabla8 = tabla8.drop(tabla8.columns[0], axis=1)
 
 warnings.simplefilter(action='ignore', category=(SettingWithCopyWarning))
 
 
 load_dotenv()
-url_victorias = st.secrets.get("POWERBI_URL_victorias")
+url_victorias = os.getenv("POWERBI_URL_victorias")
 
 # ---------------------SITE CONFIG----------------------#
 st.set_page_config(
@@ -67,18 +67,21 @@ st.set_page_config(
 st.sidebar.markdown(
     """
     <div style="
-        background-color: #999999; 
+        background-color: #aa4433; 
         padding: 15px; 
         border-radius: 10px; 
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
         font-size: 14px; 
         color: #ffffff;">
+        <h3 style="color: #ffffff;">Índice</h3>
         <ul style="list-style-type: square; padding-left: 20px;">
-            <li>pag 1: Descriptiva vbles.</li>
-            <li>pag 2: EDA detallado</li>
-            <li>pag 3: Análisis temporadas</li>
-            <li>pag 4: Modelo NO SUPERVISADO</li>
+            <li>App</li>
+            <li>Pag 1: Descriptiva vbles.</li>
+            <li>Pag 2: EDA detallado</li>
+            <li>Pag 3: Análisis temporadas 2006-2012</li>
+            <li>Pag 4: Modelo NO SUPERVISADO</li>
         </ul>
+        <p style="font-size: 12px; color: #ffffff;">Para ver estas secciones, haga click en el nombre de éstas en la parte superior del sidebar.</p>
     </div>
     """,
     unsafe_allow_html=True
@@ -92,7 +95,7 @@ st.markdown(
     <div style="text-align: center; margin-top: 20px;">
         <img src="data:image/png;base64,{}" width="200" style="border-radius: 15px;">
     </div>
-    """.format(base64.b64encode(open('img/RBF_logo.png', "rb").read()).decode()),
+    """.format(base64.b64encode(open('../img/RBF_logo.png', "rb").read()).decode()),
     unsafe_allow_html=True
 )
 
@@ -120,7 +123,7 @@ page = option_menu(None, ["Home", "Limpieza", "EDA", "Temporadas", "Test de Hip�
 # read data
 @st.cache_data()
 def load_data():
-    df = pd.read_csv('data/FILTERED_ROWS.csv')
+    df = pd.read_csv('../data/FILTERED_ROWS.csv')
     return df
 
 # load data
@@ -145,7 +148,7 @@ def add_bg_from_local(image_file):
     unsafe_allow_html=True
 )
 
-add_bg_from_local('img/banner.png')
+add_bg_from_local('../img/icon_moto2.png')
 
 # ---------------------BODY----------------------#
 
@@ -196,8 +199,8 @@ st.markdown(
         </div>
     </div>
     """.format(
-        base64.b64encode(open('img/icon_moto.png', "rb").read()).decode(),
-        base64.b64encode(open('img/icon_moto.png', "rb").read()).decode()
+        base64.b64encode(open('../img/icon_moto.png', "rb").read()).decode(),
+        base64.b64encode(open('../img/icon_moto.png', "rb").read()).decode()
     ),
     unsafe_allow_html=True
 )
@@ -220,26 +223,14 @@ if page == "Home":
     st.write("")
     
     st.markdown(
-    """
-    <div style="background-color: white; padding: 20px; border-radius: 10px; font-family: Arial, sans-serif;">
-        <h1 style="text-align: center; color: #2E86C1;">¡Bienvenido a nuestra aplicación!</h1>
-        <h2 style="margin-top: 20px; color: #117A65;">Podrá usted consultar:</h2>
-        <ul style="list-style-type: square; line-height: 1.8; margin-left: 20px;">
-            <li><b><span style="color: #8E44AD;">LIMPIEZA:</span></b> <i>El pre-procesamiento de los datasets que utilizamos.</i></li>
-            <li><b><span style="color: #D35400;">EDA:</span></b> <i>Gráficas comentadas de nuestros análisis exploratorios.</i></li>
-            <li><b><span style="color: #2874A6;">TEMPORADAS:</span></b> <i>Analizamos algunas temporadas y sacamos conclusiones inéditas.</i></li>
-            <li><b><span style="color: #16A085;">CONTRASTE DE HIPÓTESIS:</span></b> <i>Resolvemos algunas dudas que muchos aficionados al motociclismo tienen/tenemos.</i></li>
-            <li><b><span style="color: #C0392B;">MODELO DE REGRESIÓN:</span></b> <i>Con nuestro nuevo modelo, podrá usted introducir los datos de su circuito (real o ficticio) y éste le dirá el tiempo por vuelta estimado.</i></li>
-            <li><b><span style="color: #7D3C98;">Sidebar:</span></b> <i>Información más pormenorizada de todos estos procesos.</i></li>
-            <li><b><span style="color: #1F618D;">Y mucho más:</span></b> <i>¡Esto se actualiza cada día!</i></li>
-        </ul>
-        <h2 style="margin-top: 30px; color: #117A65;">Próximas novedades:</h2>
-        <p style="text-indent: 20px; line-height: 1.8;">En pocas semanas, estará disponible la nueva aplicación con la red neuronal <b>InceptionV3</b>, con la que podrá 
-        <i>dibujar con el cursor un TRAZADO de un circuito real</i>, y ésta le dirá el nombre del circuito con sus datos y estadísticas.</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+        """
+        <div style="background-color: white; padding: 10px; border-radius: 5px;">
+            <h1>En este proyecto...</h1>
+            Aquí se muestran detalles sobre la limpieza de datos.
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 
 
@@ -304,7 +295,7 @@ elif page == "Limpieza":
     )  
     st.write("")
 
-    st.image('img/boxplot_speed.jpg', use_container_width=True)
+    st.image('../img/boxplot_speed.jpg', use_column_width=True)
     
     st.write("")
     st.markdown(
@@ -408,15 +399,15 @@ elif page == "EDA":
     
     st.write("")
 
-    st.image('img/velocidad.jpg', use_container_width=True)
+    st.image('../img/velocidad.jpg', use_column_width=True)
     
     st.write("")
 
-    st.image('img/velocidad_3_jorobas.jpg', use_container_width=True)
+    st.image('../img/velocidad_3_jorobas.jpg', use_column_width=True)
     
     st.write("")
 
-    st.image('img/cilindradas_antiguas.jpg', use_container_width=True)
+    st.image('../img/cilindradas_antiguas.jpg', use_column_width=True)
     
     st.write("")
 
@@ -454,7 +445,7 @@ elif page == "EDA":
     
     st.write("")
     
-    st.image('img/los_4_fantasticos.jpg', use_container_width=True)
+    st.image('../img/los_4_fantasticos.jpg', use_column_width=True)
 
     st.markdown(
         """
@@ -545,22 +536,12 @@ elif page == "Temporadas":
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h2 style="text-indent: 1em;">Análisis de temporadas 2006-2010</h2>
-            <p style="text-indent: 1em;"> En este apartado se analizan las <b>temporadas 2006-2010</b>, que han sido solicitadas por nuestros seguidores en la encuesta de la semana pasada. 
+            <p style="text-indent: 1em;"> En este apartado se analizan las temporadas 2006-2010, que son las que se han considerado más relevantes para el análisis de la velocidad media en carrera. 
             </p>
-            <p style="text-indent: 1em;"> Se ha creado un linechart para cada uno de los años con Plotly Express que muestra la de las puntuaciones de los 10 mejores pilotos de una temporada. Este tipo de
-            gráficas nos permite detectar patrones de manera sencilla e interpretar correctamente los aspectos más importantes que sucedieron en ese año (además de tirar de la memoria que muchos
-            de los aficionados poseemos).
+            <p style="text-indent: 1em;"> Se ha creado un gráfico interactivo con Plotly Express que muestra la evolución de la velocidad media en carrera en las tres categorías desde 2006 hasta 2012. 
             </p>
             <h3 style="text-indent: 1em;">Contextualización</h3>
-            <p style="text-indent: 1em;"> En el período 2005 - 2009 se produjo un cambio de paradigma en la categoría reina de motociclismo. Se venía de 5 títulos consecutivos de 
-            Valentino Rossi y de un dominio apabullante del piloto transalpino. Sin embargo, una floja temporada 2006 del italiano aunada a la irrupción de tres jóvenes pilotos que tenían
-            un estilo de pilotaje innovador, nos trajeron de nuevo unos campeonatos emocionantes en los que se alternaban las victorias el mismo grupo de corredores:
-            <ul style="text-indent: 1em;">
-                <li> Valentino Rossi #46
-                <li> Casey Stoner #27
-                <li> Dani Pedrosa #26
-                <li> Jorge Lorenzo #48 y #99
-            </ul>
+            <p style="text-indent: 1em;"> En el período 2005 - 2009 se produjo un cambio de paradigma en la categoría reina de motociclismo. 
             </p>
         </div>
         """,
@@ -572,22 +553,13 @@ elif page == "Temporadas":
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h3 style="text-indent: 1em;">Temporada 2006</h3>
-            <p style="text-indent: 1em;"> El campeonato 2006, como podemos ver, se caracterizó por un duelo entre Nicky Hayden y Valentino Rossi, que finalmente se terminó
-            llevando el estadounidense tras un final de campeonato muy emocionante. Dani Pedrosa debutaba ese año y se adijudicó un par de victorias a los mandos de su Repsol
-            Honda. 
-            </p>
-            <p style="text-indent: 1em;"> Esta temporada se caracterizó por la enorme igualdad y por gran cantidad de ganadores diferentes. Si le echamos un vistazo a la gráfica de puntuación por carrera,
-            vemos que hay mucha variabilidad carrera tras carrera. Es por este motivo que Nicky Hayden pudo hacerse con el título ganando únicamente en dos grandes premios (Holanda
-            y EEUU), mientras que las cinco victorias no le sirvieron a Rossi para ser campeón.</p>
-            <p style="text-indent: 1em;"> A modo de curiosidad: puede que les llame la atención las puntuaciones del gran premio de Catalunya, con una gran cantidad de ceros. Esto fue debido a una
-            caída grupal que tuvo lugar en la salida tras un toque entre el español Sete Gibernau y Loris Capirossi, que terminó haciendo un efecto dominó involucrando a otros pilotos
-            como Marco Melandri y Dani Pedrosa. El vídeo de la salida de ese caótico gran premio se puede visualizar en este link: <a href="https://www.youtube.com/watch?v=AOwNOT-BlG8" target="_blank"> Ver vídeo en YouTube </a>
+            <p style="text-indent: 1em;"> El campeonato 2006, como podemos ver, se caracterizó por 
             </p>
         </div>
         """,
         unsafe_allow_html=True)
 
-    st.image('img/2006.jpg', use_container_width=True)
+    st.image('../img/2006.jpg', use_column_width=True)
 
     st.write("")
 
@@ -596,66 +568,39 @@ elif page == "Temporadas":
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <h3 style="text-indent: 1em;">Temporada 2007</h3>
             <p style="text-indent: 1em;"> El año 2007 fue el primero de la llamada era de las 800cc, que sustituyó a las 990cc. Se caracterizó por
-        el dominio de <b>Casey Stoner</b> ya desde la primera carrera. Valentino Rossi y Dani Pedrosa alternaron algunas victorias y se disputaron el segundo puesto
-        del campeonato. Mientras tanto, en la categoría de 250cc Jorge Lorenzo se convertía en bicampeón tras una temporada excelsa y se preparaba para dar el salto
-        a MotoGP.
-            </p>  
+        el dominio de <b>Casey Stoner</b> ya desde la primera carrera.  
+            </p>
         </div>
         """,
         unsafe_allow_html=True)
 
-    st.image('img/2007.jpg', use_container_width=True)
+    st.image('../img/2007.jpg', use_column_width=True)
 
     st.write("")
 
     st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Temporada 2008</h3>
+            <h3 style="text-indent: 1em;">Temporada 2007</h3>
             <p style="text-indent: 1em;"> En el año 2008 debutó el mallorquín <b>Jorge Lorenzo</b> como compañero de equipo de Valentino Rossi.
         Este año consistió en una lucha cuerpo a cuerpo entre Stoner y Rossi, que tuvo su climax durante el Gran Premio de Laguna Seca, donde se recuerda
         el famoso adelantamiento de Rossi a Stoner en la curva de la sacacorchos. No obstante, durante la primera mitad del campeonato el dominio
         fue de Pedrosa, que pese a contar con tan sólo dos victorias era el más regular. En el Gran Premio de Alemania, con la pista mojada y con Pedrosa de
         cabalgando hacia la victoria, una mala caída en la curva 1 le destrozó el hombro y su lucha por el título mundial se esfumó.   
             </p>
-            <p> En cuanto a Jorge Lorenzo, tuvo un gran inicio de temporada obteniendo tres pole positions consecutivas y una victoria en estoril, pero una
-        serie de caídas a partir de la carrera de Shangai lastraron su buen arranque y acabó teniendo un final de campeonato algo discreto.
         </div>
         """,
         unsafe_allow_html=True)
 
-    st.image('img/2008.jpg', use_container_width=True)
+    st.image('../img/2008.jpg', use_column_width=True)
 
     st.write("")
 
-    st.markdown(
-        """
-        <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Temporada 2009</h3>
-            <p style="text-indent: 1em;"> El campeonato del 2009 se caracterizó por una lucha entre compañeros de equipo, Jorge Lorenzo y Valentino Rossi, que fue muy emocionante
-            hasta las últimas carreras y que se llevó el italiano, consiguiendo su séptimo título en la máxima categoría. Pedrosa tuvo un año muy irregular y sólo consiguió dos victorias, mientras que Stoner
-            estuvo apartado de las carreras durante algunos meses debido a una enfermedad. 
-            </p>
-            <p> Para el recuerdo queda la carrera del Gran Premio de Catalunya del 2009, en donde Rossi logró sobrepasar a Lorenzo en la última curva de la última vuelta y ganar con ello la carrera.
-        </div>
-        """,
-        unsafe_allow_html=True)
-
-    st.image('img/2009.jpg', use_container_width=True)
+    st.image('../img/2009.jpg', use_column_width=True)
 
     st.write("")
 
-    st.markdown(
-        """
-        <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Temporada 2010</h3>
-            <p style="text-indent: 1em;"> La temporada 2010 tuvo un dominio apabullante del piloto mallorquín Lorenzo. Como se puede ver en la gráfica, en las 10 primeras carreras 
-            consiguió 7 victorias y no bajó del segundo puesto. Subió al podio en todas las carreras salvo en dos y ganó con claridad sobre Pedrosa, quien esta vez ganó en 4 carreras.
-        </div>
-        """,
-        unsafe_allow_html=True)
-
-    st.image('img/2010.jpg', use_container_width=True)
+    st.image('../img/2010.jpg', use_column_width=True)
 
 
 
@@ -669,9 +614,6 @@ elif page == "Test de Hipótesis":
                 <li> La velocidad media ha ido aumentando a lo largo de los años
                 <li> Los pilotos españoles rinden mejor en sus circuitos que en el resto 
             </ul>
-            <h3 style="text-indent: 1em;">Prueba de regresión lineal ordinaria</h3>
-            <p style="text-indent: 1em;"> Para el primer test se realizará una regresión lineal simple y se comprobarán los p-valores de los coeficientes beta de la regresión. Para el segundo caso se
-            hará la prueba de Mann-Whitney:<p/>
         </div>
         """,
         unsafe_allow_html=True)
@@ -682,7 +624,9 @@ elif page == "Test de Hipótesis":
     """
     <div style="background-color: white; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
         </p>
-        <p style="text-indent: 1em;"> Aquí tenemos el primer contraste de hipótesis.
+        <p style="text-indent: 1em;"> Aquí tenemos el primer contraste de hipótesis. Como vemos los p-valores son prácticamente cero, por lo que podemos
+        rechazar la H0 (no ha habido un cambio significativo en la velocidad media) y aceptar H1 (la velocidad media aumentó
+        significativamente año tras año). 
         </p>
         <table style="border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: Arial, sans-serif; min-width: 400px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); width: 100%;">
             <thead>
@@ -743,7 +687,7 @@ elif page == "Test de Hipótesis":
         <div style="text-align: center; border-radius: 15px; box-shadow: 0 15 15px rgba(0, 0, 0, 0.2); padding: 10px;">
             <img src="data:image/png;base64,{}" width="250">
         </div>
-        """.format(base64.b64encode(open('img/formula.png', "rb").read()).decode()),
+        """.format(base64.b64encode(open('../img/formula.png', "rb").read()).decode()),
         unsafe_allow_html=True
     )
 
@@ -769,7 +713,7 @@ elif page == "Test de Hipótesis":
         <div style="text-align: center; border-radius: 15px; box-shadow: 0 15 15px rgba(0, 0, 0, 0.2); padding: 10px;">
             <img src="data:image/png;base64,{}" width="250">
         </div>
-        """.format(base64.b64encode(open('img/formula_vm.png', "rb").read()).decode()),
+        """.format(base64.b64encode(open('../img/formula_vm.png', "rb").read()).decode()),
         unsafe_allow_html=True
     )
 
@@ -781,34 +725,18 @@ elif page == "Test de Hipótesis":
         </div>
         """,
         unsafe_allow_html=True)
-    
-    st.write("")
-
-    st.image('img/reglin.jpg', use_container_width=True)
 
     st.write("")
 
-    st.markdown(
-        """
-        <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Pruebas de Mann-Whitney</h3>
-            <p style="text-indent: 1em;"> Una pregunta que nos puede surgir a los aficionados es si es cierto aquello de que "corriendo en casa rindes mejor". Podemos comprobar si tal cosa ocurre con nuestros datos haciendo
-            un test de contraste de hipótesis. Para ello, seleccionamos una muestra A con todos los resultados de los pilotos españoles y otra muestra B con sólo los resultados de los españoles en los circuitos espeñoles. Se elige hacer
-            un test de Mann Whitney porque:
-            <ul style="text-indent: 1em;">
-                <li> Los datos no se ajustan a una distribución normal.
-                <li> Las observaciones se pueden ordenar y son independientes (aunque podrían haber mini-dependencias en los resultados de un piloto concreto). En todo caso, el test más apropiado sigue siendo el de Mann Whitney. 
-            </ul>
-            <h3 style="text-indent: 1em;">Prueba 1: TODOS LOS PILOTOS ESPAÑOLES</h3>
-        </div>
-        """,
-        unsafe_allow_html=True)
-
-    st.image('img/circ_esp.jpg', use_container_width=True)
+    st.image('../img/reglin.jpg', use_container_width=True)
 
     st.write("")
 
-    st.image('img/circ_esp_vio.jpg', use_container_width=True)
+    st.image('../img/circ_esp.jpg', use_container_width=True)
+
+    st.write("")
+
+    st.image('../img/circ_esp_vio.jpg', use_container_width=True)
 
     st.write("")
 
@@ -835,80 +763,36 @@ elif page == "Test de Hipótesis":
         </div>
         """,
         unsafe_allow_html=True)  
-
-    st.write("")
-
-    st.markdown(
-        """
-        <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Prueba 2a: DANI PEDROSA</h3>
-        </div>
-        """,
-        unsafe_allow_html=True)  
     
     st.write("")
 
-    st.image('img/circ_pedr_vio.jpg', use_container_width=True)
+    st.image('../img/circ_pedr_vio.jpg', use_column_width=True)
 
     st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <p style="text-indent: 1em;"> p=0.003 </p>
-            <p> <b>Se descarta</b> la hipótesis nula. Dani Pedrosa rinde mejor en los circuitos españoles que en los de fuera. </p>
+        <p> <b>Se descarta</b> la hipótesis nula. Dani Pedrosa rinde mejor en los circuitos españoles que en los de fuera. </p>
         </div>
         """,
         unsafe_allow_html=True)
     
     st.write("")
 
-    st.markdown(
-        """
-        <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Prueba 2b: ALVARO BAUTISTA</h3>
-        </div>
-        """,
-        unsafe_allow_html=True)
-
     st.write("")
 
-    st.image('img/circ_bau_vio.jpg', use_container_width=True) 
+    st.image('../img/circ_bau_vio.jpg', use_column_width=True) 
 
     st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
             <p style="text-indent: 1em;"> p=0.929 </p>
-            <p> <b>No podemos rechazar</b> la hipótesis nula. Álvaro Bautista parece rendir igual en los circuitos españoles que en los de fuera. </p>
+        <p> <b>No podemos rechazar</b> la hipótesis nula. Álvaro Bautista parece rendir igual en los circuitos españoles que en los de fuera. </p>
         </div>
         """,
         unsafe_allow_html=True)
     
     st.write("")
-
-    st.markdown(
-        """
-        <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h3 style="text-indent: 1em;">Conclusión</h3>
-            <p style="text-indent: 1em;"> Hay pilotos a los que sí que les afecta poderosamente el correr en casa o no. Como hemos visto, a <b> Dani </b> se le dan <b> mucho mejor los circuitos de su país </b> que los otros,
-            mientras que a Álvaro Bautista no se le dan específicamente mejor los circuitos españoles. </p>
-            <p style="text-indent: 1em;"> Son varias las lecturas que se pueden sacar de este fenónemo. Es posible que llame la atención el hecho de que un piloto considerado un fuera de serie tenga tanta preferencia por
-            los circuitos patrios, cuando lo normal sería que <b> rindiese muy bien en todos </b> mientras que pilotos más terrenales, como el propio Bautista, obtuviese mejores resultados en los circuitos de casa, ya no solo por el apoyo
-            del público y la motivación, sino por estar <b> más familiarizado </b> con estos trazados al haber disputado campeonatos de categorías inferiores en ellos. </p>
-            <p style="text-indent: 1em;"> Sin embargo, esa lectura podría ser muy simplista: sin ir más lejos, Valentino Rossi tuvo una <b> larga racha de victorias consecitivas </b> en el circuito de Muguello (siete seguidas), y lo mismo 
-            sucedió con <b> Casey Stoner en Phillips Island </b> (seis victorias consecutivas del 2007 al 2012). Como vemos, incluso los más grandes pueden ser susceptibles al efecto de correr en casa y obtener allí resultados muy por encima de su media. </p>
-        </div>
-        """,
-        unsafe_allow_html=True)
-
-    st.image("img/stoner_drift.gif", width=700)
-    st.markdown(
-        """
-        <div style="background-color: white; padding: 0px; border-radius: 5px;">
-            <p style="text-indent: 1em; font-size: 3.6mm;">     
-            <b>Casey Stoner</b> haciendo uno de sus célebres drinftings en Phillips Island. 
-            Fuente: Reddit | <a href="https://www.reddit.com/r/pics/comments/lic6g/casey_stoner_powersliding_his_motorcycle_at_80/?rdt=41597" target="_blank"> Link </a></p>
-        </div>
-        """,
-        unsafe_allow_html=True)
 
 
 elif page == "Modelo de Regresión":
@@ -959,7 +843,7 @@ elif page == "Modelo de Regresión":
     st.write("")
     import joblib
     import datetime
-    model = joblib.load('model_RF.pkl')
+    model = joblib.load('../model_RF.pkl')
 
     st.markdown(
     """
@@ -1002,8 +886,95 @@ elif page == "Modelo de Regresión":
             """,
             unsafe_allow_html=True
         )
-        st.image('img/flag.png', use_container_width=True)
+        st.image('../img/flag.png', use_column_width=True)
         
+
+elif page == "Aplicación":
+
+    import gradio as gr
+    import tensorflow as tf
+    import numpy as np
+    from PIL import Image
+    from streamlit_drawable_canvas import st_canvas
+
+
+    modelo = tf.keras.models.load_model("../modelo_adivinar_circuito.keras")
+
+
+    def clasificar_imagenes(img):
+        # Verificar si img es un diccionario y contiene las claves esperadas
+        if isinstance(img, dict):
+            if "composite" in img:
+                img = img["composite"]  # Usar la imagen de la clave "composite"
+            else:
+                raise ValueError("El diccionario no contiene la clave 'composite'")
+        
+        # Imprimir información para depuración
+        print("Forma de la imagen inicial:", img.shape)
+        print("Valor máximo inicial:", np.max(img))
+        
+        
+        # Extraer los tres primeros canales (RGB)
+        img_rgb = img
+        
+        # Redimensionar la imagen a (224, 224, 3)
+        img_resized = tf.image.resize(img_rgb, (224, 224))
+        
+        # Normalizar los valores de la imagen al rango [0, 1]
+        print("Valor máximo justo antes de normalizar:", np.max(img_resized))
+        img_resized = img_resized.numpy().astype("float32") / 255.0
+        print("Valor máximo justo después de normalizar:", np.max(img_resized))
+        
+        # Expandir dimensiones para que sea (1, 224, 224, 3), compatible con el modelo
+        img_resized = np.expand_dims(img_resized, axis=0)  # Añadir dimensión para batch
+        
+        # Imprimir información para depuración
+        print("Forma después del procesamiento:", img_resized.shape)
+        print("Valor máximo después de normalizar:", np.max(img_resized))
+        
+        # Realizar la predicción con el modelo
+        predicciones = modelo.predict(img_resized)
+        digito_predicho = np.argmax(predicciones)  # Obtener la clase con mayor probabilidad
+
+        class_names = ['montmelo', 'monza', 'silverstone', 'spa']
+        predicted_class = class_names[digito_predicho]
+        print(predicted_class)
+        return str(predicted_class)
+
+
+st.title("Clasificación de Circuitos")
+st.write("Sube un dibujo de un circuito para identificarlo.")
+
+canvas_result = st_canvas(
+    fill_color="rgba(255, 255, 255, 1)",  # Color de fondo (blanco)
+    stroke_width=3,                      # Grosor del trazo
+    stroke_color="#000000",              # Color del trazo (negro)
+    background_color="#FFFFFF",          # Color de fondo del lienzo
+    height=300,                          # Altura del lienzo
+    width=400,                           # Ancho del lienzo
+    drawing_mode="freedraw",             # Modo de dibujo libre
+    key="canvas",                        # Clave única para el lienzo
+)
+
+# Procesar el dibujo
+if canvas_result.image_data is not None:
+    # Convertir el dibujo a un array NumPy
+    img_array = canvas_result.image_data.astype("uint8")
+    
+    # Mostrar el dibujo
+    st.image(img_array, caption="Tu dibujo", use_column_width=True)
+    
+    # Si el usuario desea predecir
+    if st.button("Identificar circuito"):
+        # Convertir a imagen RGBA
+        img_pil = Image.fromarray(img_array).convert("RGB")
+        img_np = np.array(img_pil)
+        
+        # Clasificar la imagen
+        prediccion = clasificar_imagenes(img_np)
+        
+        # Mostrar el resultado
+        st.success(f"El circuito identificado es: **{prediccion}**")
 
     
 
