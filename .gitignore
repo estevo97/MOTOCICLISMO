@@ -160,3 +160,5 @@ cython_debug/
 #.idea/
 speed.pbix
 modelo_adivinar_circuitos.keras
+.pkl
+.keras
