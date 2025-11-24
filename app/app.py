@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_drawable_canvas import st_canvas
 import streamlit.components.v1 as components
 from streamlit_option_menu import option_menu
 import numpy as np
