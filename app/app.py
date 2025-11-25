@@ -899,7 +899,7 @@ elif page == "Aplicación":
     from streamlit_drawable_canvas import st_canvas
 
 
-    modelo = tf.keras.models.load_model("../modelo_adivinar_circuito.keras")
+    modelo = tf.keras.models.load_model("../modelo_adivinar_circuitos.keras")
 
 
     def clasificar_imagenes(img):
@@ -943,10 +943,10 @@ elif page == "Aplicación":
         return str(predicted_class)
 
 
-st.title("Clasificación de Circuitos")
-st.write("Sube un dibujo de un circuito para identificarlo.")
+    st.title("Clasificación de Circuitos")
+    st.write("Sube un dibujo de un circuito para identificarlo.")
 
-canvas_result = st_canvas(
+    canvas_result = st_canvas(
     fill_color="rgba(255, 255, 255, 1)",  # Color de fondo (blanco)
     stroke_width=3,                      # Grosor del trazo
     stroke_color="#000000",              # Color del trazo (negro)
@@ -955,27 +955,27 @@ canvas_result = st_canvas(
     width=400,                           # Ancho del lienzo
     drawing_mode="freedraw",             # Modo de dibujo libre
     key="canvas",                        # Clave única para el lienzo
-)
+    )
 
-# Procesar el dibujo
-if canvas_result.image_data is not None:
-    # Convertir el dibujo a un array NumPy
-    img_array = canvas_result.image_data.astype("uint8")
+    # Procesar el dibujo
+    if canvas_result.image_data is not None:
+        # Convertir el dibujo a un array NumPy
+        img_array = canvas_result.image_data.astype("uint8")
     
-    # Mostrar el dibujo
-    st.image(img_array, caption="Tu dibujo", use_column_width=True)
+        # Mostrar el dibujo
+        st.image(img_array, caption="Tu dibujo", use_column_width=True)
     
-    # Si el usuario desea predecir
-    if st.button("Identificar circuito"):
-        # Convertir a imagen RGBA
-        img_pil = Image.fromarray(img_array).convert("RGB")
-        img_np = np.array(img_pil)
+        # Si el usuario desea predecir
+        if st.button("Identificar circuito"):
+            # Convertir a imagen RGBA
+            img_pil = Image.fromarray(img_array).convert("RGB")
+            img_np = np.array(img_pil)
         
-        # Clasificar la imagen
-        prediccion = clasificar_imagenes(img_np)
+            # Clasificar la imagen
+            prediccion = clasificar_imagenes(img_np)
         
-        # Mostrar el resultado
-        st.success(f"El circuito identificado es: **{prediccion}**")
+            # Mostrar el resultado
+            st.success(f"El circuito identificado es: **{prediccion}**")
 
     
 
