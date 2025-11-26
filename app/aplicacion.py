@@ -7,7 +7,7 @@ from streamlit_drawable_canvas import st_canvas
 # Cargar modelo solo una vez
 @st.cache_resource
 def cargar_modelo():
-    return tf.keras.models.load_model("../modelo_adivinar_circuitos2.keras")
+    return tf.keras.models.load_model("modelo_adivinar_circuitos2.keras")
 
 modelo = cargar_modelo()
 
@@ -55,7 +55,7 @@ def run():
     if canvas_result.image_data is not None:
 
         img_array = canvas_result.image_data.astype("uint8")
-        st.image(img_array, caption="Tu dibujo", use_column_width=True)
+        st.image(img_array, caption="Tu dibujo", use_container_width=True)
 
         if st.button("Identificar circuito"):
 

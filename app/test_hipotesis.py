@@ -35,10 +35,10 @@ def run():
     )
 
     # Tabla HTML
-    st.markdown(open("tabla_velocidad.html", "r", encoding="utf8").read(), unsafe_allow_html=True)
+    # st.markdown(open("tabla_velocidad.html", "r", encoding="utf8").read(), unsafe_allow_html=True)
 
     # Fórmula 1
-    formula_img = base64.b64encode(open('../img/formula.png', "rb").read()).decode()
+    formula_img = base64.b64encode(open('img/formula.png', "rb").read()).decode()
     st.markdown(
         f"""
         <div style="text-align: center; padding: 10px;">
@@ -49,7 +49,7 @@ def run():
     )
 
     # Fórmula 2
-    formula_vm = base64.b64encode(open('../img/formula_vm.png', "rb").read()).decode()
+    formula_vm = base64.b64encode(open('img/formula_vm.png', "rb").read()).decode()
     st.markdown(
         f"""
         <div style="text-align: center; padding: 10px;">
@@ -60,9 +60,9 @@ def run():
     )
 
     # Gráficas
-    st.image('../img/reglin.jpg', use_container_width=True)
-    st.image('../img/circ_esp.jpg', use_container_width=True)
-    st.image('../img/circ_esp_vio.jpg', use_container_width=True)
+    st.image('img/reglin.jpg', use_container_width=True)
+    st.image('img/circ_esp.jpg', use_container_width=True)
+    st.image('img/circ_esp_vio.jpg', use_container_width=True)
 
     st.markdown(
         """
@@ -75,7 +75,7 @@ def run():
     )
 
     # Casos particulares
-    st.image('../img/circ_pedr_vio.jpg', use_container_width=True)
+    st.image('img/circ_pedr_vio.jpg', use_container_width=True)
     st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">
@@ -86,7 +86,7 @@ def run():
         unsafe_allow_html=True
     )
 
-    st.image('../img/circ_bau_vio.jpg', use_container_width=True)
+    st.image('img/circ_bau_vio.jpg', use_container_width=True)
     st.markdown(
         """
         <div style="background-color: white; padding: 10px; border-radius: 5px;">

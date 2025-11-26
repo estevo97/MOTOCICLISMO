@@ -61,7 +61,7 @@ def run():
     # Cargar modelo una sola vez
     @st.cache_resource
     def cargar_modelo():
-        return joblib.load('../model_RF.pkl')
+        return joblib.load('model_RF.pkl')
 
     model = cargar_modelo()
 
@@ -109,4 +109,4 @@ def run():
             unsafe_allow_html=True
         )
 
-        st.image('../img/flag.png', use_column_width=True)
+        st.image('img/flag.png', use_container_width=True)

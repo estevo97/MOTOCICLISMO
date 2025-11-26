@@ -35,7 +35,7 @@ def run():
             """,
             unsafe_allow_html=True)
 
-    st.image('img/2006.jpg', use_column_width=True)
+    st.image('img/2006.jpg', use_container_width=True)
 
     st.write("")
 
@@ -50,7 +50,7 @@ def run():
             """,
             unsafe_allow_html=True)
 
-    st.image('img/2007.jpg', use_column_width=True)
+    st.image('img/2007.jpg', use_container_width=True)
 
     st.write("")
 
@@ -68,12 +68,12 @@ def run():
             """,
             unsafe_allow_html=True)
 
-    st.image('img/2008.jpg', use_column_width=True)
+    st.image('img/2008.jpg', use_container_width=True)
 
     st.write("")
 
-    st.image('img/2009.jpg', use_column_width=True)
+    st.image('img/2009.jpg', use_container_width=True)
 
     st.write("")
 
-    st.image('img/2010.jpg', use_column_width=True)
+    st.image('img/2010.jpg', use_container_width=True)

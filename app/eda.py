@@ -1,9 +1,14 @@
 
+import os
 import streamlit as st
 import streamlit.components.v1 as components
 from data import tabla3, tabla4, tabla5, tabla6, tabla7, tabla8
+from dotenv import load_dotenv
 
 # IMPORTA TUS TABLAS Y VARIABLES (AJUSTA A TU PROYECTO)
+
+load_dotenv()
+url_victorias = os.getenv("POWERBI_URL_victorias")
 
 
 def run():
@@ -94,12 +99,11 @@ def run():
     st.write("")
 
     # GRÁFICOS DE VELOCIDAD
-    st.image('img/velocidad.jpg', use_column_width=True)
+    st.image('img/velocidad.jpg', use_container_width=True)
     st.write("")
-    st.image('img/velocidad_3_jorobas.jpg', use_column_width=True)
+    st.image('img/velocidad_3_jorobas.jpg', use_container_width=True)
     st.write("")
-    st.image('img/cilindradas_antiguas.jpg', use_column_width=True)
-
+    st.image('img/cilindradas_antiguas.jpg', use_container_width=True)
     st.write("")
 
     # MÁXIMOS GANADORES
@@ -139,7 +143,7 @@ def run():
     )
 
     st.write("")
-    st.image('img/los_4_fantasticos.jpg', use_column_width=True)
+    st.image('img/los_4_fantasticos.jpg', use_container_width=True)
     st.write("")
 
     st.markdown(
