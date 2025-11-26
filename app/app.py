@@ -1,4 +1,3 @@
-from MOTOCICLISMO.app.pages import test_hipotesis
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import streamlit.components.v1 as components
@@ -65,31 +64,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed", 
 )
 
-# Recuadro en el sidebar
-st.sidebar.markdown(
-    """
-    <div style="
-        background-color: #aa4433; 
-        padding: 15px; 
-        border-radius: 10px; 
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
-        font-size: 14px; 
-        color: #ffffff;">
-        <h3 style="color: #ffffff;">Índice</h3>
-        <ul style="list-style-type: square; padding-left: 20px;">
-            <li>App</li>
-            <li>Pag 1: Descriptiva vbles.</li>
-            <li>Pag 2: EDA detallado</li>
-            <li>Pag 3: Análisis temporadas 2006-2012</li>
-            <li>Pag 4: Modelo NO SUPERVISADO</li>
-        </ul>
-        <p style="font-size: 12px; color: #ffffff;">Para ver estas secciones, haga click en el nombre de éstas en la parte superior del sidebar.</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-
 # ---------------------LOGO----------------------#
 
 st.markdown(
@@ -152,10 +126,8 @@ def add_bg_from_local(image_file):
 
 add_bg_from_local('../img/icon_moto2.png')
 
+
 # ---------------------BODY----------------------#
-
-
-
 
 # Haz algo para que el titulo quede en un formato mas bonito
 
@@ -208,10 +180,9 @@ st.markdown(
 )
 
 
-
 # ---------------------HOME----------------------#
 
-from pages import home
+import home
 if page == "Home":
     home.run()
 
@@ -219,9 +190,7 @@ if page == "Home":
 
 # ---------------------LIMPIEZA----------------------#
 
-
-
-from pages import limpieza
+import limpieza
 if page == "Limpieza":
     limpieza.run()
 
@@ -229,8 +198,7 @@ if page == "Limpieza":
 
 
 # ---------------------EDA----------------------#
-
-from pages import eda
+import eda
 if page == "EDA":
     eda.run()
     
@@ -238,26 +206,26 @@ if page == "EDA":
 
 # ---------------------TEMPORADAS----------------------#
 
-from pages import temporadas
+import temporadas
 if page == "Temporadas":
     temporadas.run()
 
 
 # ---------------------TEST DE HIPÓTESIS----------------------#
 
-from pages import temporadas
+import test_hipotesis
 if page == "Test de Hipótesis":
     test_hipotesis.run()
 
 # ---------------------MODELO DE REGRESIÓN----------------------#
 
-from pages import regresion
+import regresion
 if page == "Modelo de Regresión":
     regresion.run()
 
 # ---------------------APLICACIÓN----------------------#
         
-from pages import aplicacion
+import aplicacion
 if page == "Aplicación":
     aplicacion.run()
 

@@ -7,7 +7,7 @@ from streamlit_drawable_canvas import st_canvas
 # Cargar modelo solo una vez
 @st.cache_resource
 def cargar_modelo():
-    return tf.keras.models.load_model("modelo_adivinar_circuitos.keras")
+    return tf.keras.models.load_model("../modelo_adivinar_circuitos2.keras")
 
 modelo = cargar_modelo()
 
