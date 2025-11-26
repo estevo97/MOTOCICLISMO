@@ -1,9 +1,10 @@
 
 import streamlit as st
 import streamlit.components.v1 as components
+from data import tabla3, tabla4, tabla5, tabla6, tabla7, tabla8
 
 # IMPORTA TUS TABLAS Y VARIABLES (AJUSTA A TU PROYECTO)
-# from MOTOCICLISMO.app.data import tabla3, tabla4, tabla5, tabla6, tabla7, tabla8, url_victorias
+
 
 def run():
 
@@ -93,11 +94,11 @@ def run():
     st.write("")
 
     # GRÁFICOS DE VELOCIDAD
-    st.image('../img/velocidad.jpg', use_column_width=True)
+    st.image('img/velocidad.jpg', use_column_width=True)
     st.write("")
-    st.image('../img/velocidad_3_jorobas.jpg', use_column_width=True)
+    st.image('img/velocidad_3_jorobas.jpg', use_column_width=True)
     st.write("")
-    st.image('../img/cilindradas_antiguas.jpg', use_column_width=True)
+    st.image('img/cilindradas_antiguas.jpg', use_column_width=True)
 
     st.write("")
 
@@ -138,7 +139,7 @@ def run():
     )
 
     st.write("")
-    st.image('../img/los_4_fantasticos.jpg', use_column_width=True)
+    st.image('img/los_4_fantasticos.jpg', use_column_width=True)
     st.write("")
 
     st.markdown(
