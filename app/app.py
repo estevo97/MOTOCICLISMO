@@ -105,7 +105,7 @@ def main():
         unsafe_allow_html=True
     )
 
-    add_bg_from_local('img/icon_moto2.png')
+    add_bg_from_local('img/vidriera.png')
 
 
     # ---------------------BODY----------------------#
