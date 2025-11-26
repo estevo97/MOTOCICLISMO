@@ -12,3 +12,4 @@ joblib
 pycaret
 xgboost
 python-dotenv
+streamlit-drawable-canvas
